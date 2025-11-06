@@ -1,140 +1,120 @@
-# 🌸 YogAmarte — Sitio Web de Yoga y Terapias Holísticas
+# 🌿 YogAmarte — Sitio web de Yoga y Terapias Holísticas
 
-**YogAmarte** es una página web informativa y de contacto dedicada a la práctica del **yoga**, las **terapias holísticas** y la **sanación espiritual**, creada para **Paola Bergmann**.
-Permite a los usuarios **agendar clases personalizadas**, conocer los **servicios disponibles** y descubrir la **trayectoria y filosofía** de la instructora.
-
----
-
-## 🌿 Descripción
-
-El sitio web de **YogAmarte** fue desarrollado con el propósito de ofrecer un espacio digital sereno y accesible donde los visitantes puedan:
-
-* Informarse sobre **servicios de yoga** (individuales y grupales).
-* Explorar **terapias chamánicas, angelicales y energéticas**.
-* **Agendar sesiones** o comunicarse directamente con Paola.
-* Conocer su **biografía y enfoque espiritual** hacia el bienestar integral.
-
-El diseño combina estética suave, navegación intuitiva y estructura clara para transmitir equilibrio y conexión.
+Sitio web estático desarrollado para **YogAmarte**, un espacio de bienestar dirigido por **Paola Bergmann**, enfocado en la **prestación de servicios de yoga, terapias chamánicas, angelicales y retiros holísticos**.
+La página permite a los visitantes **agendar clases**, **contactarse directamente** y conocer más sobre los **servicios ofrecidos** y la **biografía de la instructora**.
 
 ---
 
-## ✨ Características principales
+## 🪷 Descripción general
 
-* 🌐 **Sitio estático** en HTML, CSS y JavaScript.
-* 🧘‍♀️ **Sección de servicios** con modales informativos.
-* 💬 **Carrusel automático** con testimonios reales.
-* 🧭 **Navbar y footer dinámicos**, cargados mediante JavaScript.
-* ♿ **Accesibilidad mejorada** (uso de `aria-*`, foco, Escape, tabulación).
-* 📱 **Diseño responsive**, adaptado a dispositivos móviles.
-* 📷 **Imágenes optimizadas** con carga diferida (`loading="lazy"`).
+El sitio tiene como propósito principal **promocionar los servicios de YogAmarte** y facilitar el contacto con los clientes interesados.
+Incluye:
+
+* Página principal con banner y secciones de servicios.
+* Páginas dedicadas a contacto, reserva, testimonios y sobre mí.
+* Sistema de traducción (multiidioma).
+* Navbar y footer cargados dinámicamente desde componentes HTML.
+* Diseño limpio, responsive y con accesibilidad básica.
 
 ---
 
-## 🗂️ Estructura del proyecto
+## 📂 Estructura del proyecto
 
 ```
 YogAmarte/
 │
-├── index.html                  # Página principal
+├── componentes/              # Estructura modular (navbar/footer)
+│   ├── footer.html
+│   └── navbar.html
 │
-├── css/
-│   └── index.css               # Estilos principales
+├── css/                      # Estilos del sitio
+│   ├── contacto.css
+│   ├── footer.css
+│   ├── index.css
+│   ├── nav.css
+│   ├── reserva.css
+│   ├── sobremi.css
+│   ├── testimonio.css
+│   └── variables.css
 │
-├── js/
-│   ├── funciones.js            # Lógica de modales, carrusel y animaciones
-│   ├── nav.js                  # Control del menú de navegación
-│   ├── load-navbar.js          # Inserta el navbar dinámicamente
-│   ├── load-footer.js          # Inserta el footer dinámicamente
-│   └── traduccion.js           # Utilidades de traducción (opcional)
+├── data/                     # Archivos de traducción
+│   ├── es.json
+│   └── de.json
 │
-├── images/                     # Recursos gráficos e iconos
+├── images/                   # Imágenes y recursos gráficos
+│   └── (archivos varios)
 │
-└── README.md                   # Este archivo
+├── js/                       # Lógica del sitio
+│   ├── contacto.js
+│   ├── funciones.js
+│   ├── load-footer.js
+│   ├── load-navbar.js
+│   ├── nav.js
+│   ├── reserva-calendly.js
+│   └── traduccion.js
+│
+├── paginas/                  # Subpáginas del sitio
+│   ├── contacto.html
+│   ├── reserva.html
+│   ├── sobre_mi.html
+│   └── testimonio.html
+│
+├── index.html                # Página principal
+├── LICENSE                   # Licencia MIT
+└── README.md                 # Este archivo
 ```
 
 ---
 
-## ⚙️ Requisitos
+## ⚙️ Tecnologías utilizadas
 
-* Navegador moderno (Chrome, Edge, Firefox).
-* No requiere servidor (se puede abrir localmente).
-* **Live Server** en VS Code recomendado para pruebas.
-* Git opcional para control de versiones.
+* **HTML5**, **CSS3**, **JavaScript**
+* **Estructura modular:** carga dinámica de navbar y footer.
+* **Traducción:** soporte multilenguaje con archivos `.json`.
+* **Responsive Design:** adaptable a móviles, tablets y escritorio.
+* **Integración Calendly:** para agendar clases o sesiones.
 
 ---
 
-## 🚀 Instalación y ejecución (Windows)
+## 🚀 Cómo ejecutar el proyecto
 
-1. Abrir el proyecto en VS Code:
+1. Clona el repositorio o descarga los archivos:
 
-   ```powershell
-   cd "C:\Users\andri\OneDrive\Desktop\Yogamarte"
-   code .
+   ```bash
+   git clone https://github.com/a2-digital/YogAmarte.git
+   cd YogAmarte
    ```
 
-2. Visualizar el sitio:
+2. Abre el proyecto en **VS Code** o tu editor preferido.
 
-   * Doble clic en `index.html`, o
+3. Ejecuta la página:
 
-   * Desde PowerShell:
-
-     ```powershell
-     start .\index.html
-     ```
-
-   * Con Live Server (recomendado): clic derecho → *Open with Live Server*.
+   * Doble clic en `index.html`
+   * O con **Live Server (extension VS Code)**:
+     clic derecho → *Open with Live Server*
 
 ---
 
-## ✅ Verificaciones rápidas
+## 🧭 Páginas principales
 
-* Revisar la consola (F12) para detectar errores JS o rutas 404.
-* Confirmar:
-
-  * Apertura/cierre correcto de los modales.
-  * Restauración del foco.
-  * Navegación fluida con teclado.
-* Verificar que las imágenes cargan y el sitio se ve bien en móviles.
-
----
-
-## 📸 Capturas de pantalla
-
-Crea una carpeta `screenshots/` y agrega imágenes como:
-
-```markdown
-### 🧘 Página principal
-![Banner](screenshots/banner.png)
-
-### 🌼 Modal de servicio
-![Modal](screenshots/modal.png)
-
-### 💬 Carrusel de testimonios
-![Testimonios](screenshots/testimonios.png)
-```
+| Página                      | Descripción                                    |
+| --------------------------- | ---------------------------------------------- |
+| **index.html**              | Página principal con presentación de servicios |
+| **paginas/sobre_mi.html**   | Biografía y trayectoria de Paola Bergmann      |
+| **paginas/contacto.html**   | Formulario y medios de contacto                |
+| **paginas/reserva.html**    | Enlace a Calendly para agendar clases          |
+| **paginas/testimonio.html** | Carrusel con experiencias de clientes          |
 
 ---
 
-## 🧭 Comandos Git básicos
+## 🪶 Autoría y créditos
 
-```powershell
-git status
-git add -A
-git commit -m "Versión inicial de YogAmarte"
-git push -u origin main
-```
-
----
-
-## 👩‍🦰 Créditos
-
-* **Proyecto:** YogAmarte — Espacio de Yoga y Terapias Holísticas
-* **Creadora:** Paola Bergmann
-* **Desarrollo web:** Andrés Aranguren (A2 Digital)
+* Desarrollado por **Andrés Aranguren (A2 Digital)**
+* Proyecto para **Paola Bergmann — YogAmarte**
 
 ---
 
 ## 📄 Licencia
 
-Distribuido bajo la **licencia MIT**.
-Consulta el archivo `LICENSE` para más información.
+Distribuido bajo **Licencia MIT**, permitiendo uso y modificación con fines personales o profesionales.
+Consulta el archivo `LICENSE` para más detalles.
