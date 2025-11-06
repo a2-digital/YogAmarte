@@ -131,7 +131,6 @@ git push -u origin main
 * **Proyecto:** YogAmarte — Espacio de Yoga y Terapias Holísticas
 * **Creadora:** Paola Bergmann
 * **Desarrollo web:** Andrés Aranguren (A2 Digital)
-* **Contacto:** [yogamarte999@gmail.com](mailto:yogamarte999@gmail.com)
 
 ---
 
