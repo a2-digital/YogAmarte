@@ -1,0 +1,303 @@
+/* ==================== FOOTER OPTIMIZADO ==================== */
+
+@import url("variables.css");
+
+.footer {
+  font-family: "Playfair Display", serif;
+  background: var(--gradient-teal);
+  padding: var(--spacing-xs) var(--spacing-xs);
+  margin-top: 0;
+  border-top: 1px solid rgba(244, 209, 136, 0.2);
+}
+
+.footer-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+  padding-top: 15px;
+}
+
+/* ==================== COLUMNA IZQUIERDA: LOGOS ==================== */
+.logo-brand {
+  display: flex;
+  flex-direction: row; /* ✅ HORIZONTAL (uno al lado del otro) */
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl); /* ✅ Espacio entre logos */
+  padding-top: 5px;
+}
+
+/* Logo YogAmarte */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: var(--border-thick) solid var(--color-primary-gold);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-gold);
+  transition: transform var(--transition-fast);
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-brand:hover .footer-logo {
+  transform: scale(1.1);
+}
+
+.footer-brand-name {
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* Logo A2Digital */
+.footer-madeby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.footer-madeby img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: var(--radius-full);
+  border: var(--border-thick) solid var(--color-primary-gold);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-gold);
+  padding: 5px;
+  transition: transform var(--transition-fast);
+}
+
+.footer-madeby:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.footer-madeby p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-white);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.footer-madeby strong {
+  color: var(--color-primary-gold);
+  font-weight: 600;
+}
+
+/* ==================== COLUMNA CENTRAL: CONTENIDO ==================== */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  text-align: center;
+}
+
+.footer-copyright {
+  color: var(--color-text-gray);
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--color-text-subtle);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color var(--transition-fast);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-primary-gold);
+  transition: width var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-primary-gold);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.separator {
+  color: var(--color-text-subtle);
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* ==================== COLUMNA DERECHA: REDES SOCIALES ==================== */
+.footer-social-container {
+  text-align: center;
+  justify-self: center;
+}
+
+.social-title {
+  color: var(--color-primary-gold);
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-primary-gold);
+  transition: transform var(--transition-fast);
+}
+
+.social-item i {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background: rgba(244, 209, 136, 0.1);
+  border: 1px solid rgba(244, 209, 136, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--color-primary-gold);
+  transition: all var(--transition-fast);
+}
+
+.social-item span {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--color-primary-gold);
+  transition: color var(--transition-fast);
+}
+
+.social-item:hover {
+  transform: translateY(-5px);
+}
+
+.social-item:hover i {
+  background: var(--gradient-gold);
+  color: var(--color-white);
+  box-shadow: 0 6px 15px rgba(244, 209, 136, 0.5);
+  transform: scale(1.1);
+  border-color: var(--color-primary-gold);
+}
+
+.social-item:hover span {
+  color: var(--color-white);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    text-align: center;
+  }
+
+  /* ✅ Mantener logos horizontales en tablet */
+  .logo-brand {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  /* ✅ En móvil SI se apilan verticalmente */
+  .logo-brand {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-logo,
+  .footer-madeby img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .social-item i {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo,
+  .footer-madeby img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-copyright {
+    font-size: 13px;
+  }
+
+  .social-item i {
+    width: 36px;
+    height: 36px;
+  }
+}

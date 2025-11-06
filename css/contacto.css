@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* ==================== VARIABLES ==================== */
+:root {
+  --color-primary-gold: #f4d188;
+  --color-secondary-gold: #bf8d50;
+  --color-white: #ffffff;
+  --color-text-light: #f0f0f0;
+  --color-text-gray: #e0e0e0;
+
+  --bg-dark-green: #1f4c52;
+  --bg-light-cream: #f5f5e8;
+
+  --spacing-xs: 10px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 60px;
+
+  --radius-sm: 10px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
+  --radius-full: 50%;
+
+  --transition-fast: 0.3s ease;
+}
+
+/* ==================== SECCIÓN CONTACTO ==================== */
+.contacto-section {
+  min-height: 100vh;
+  padding: 180px var(--spacing-md) 90px; /* 🔧 CAMBIO: Quité el padding-bottom */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 0; /* 🔧 NUEVO: Sin margen inferior */
+}
+
+.contacto-section::before {
+  content: "";
+  position: absolute; /* IMPORTANTE: usar absolute dentro de .contacto-section */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Cubre toda la sección */
+  background: rgba(26, 58, 58, 0.85); /* Color semitransparente */
+  z-index: 0; /* Detrás del contenido */
+}
+
+.contacto-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding-bottom: var(
+    --spacing-2xl
+  ); /* 🔧 NUEVO: Padding interno en lugar de section */
+}
+
+/* ==================== TÍTULO ==================== */
+.contacto-title {
+  font-size: 50px;
+  color: var(--color-primary-gold);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-family: "Playfair Display", serif;
+}
+
+/* ==================== CONTENIDO ==================== */
+.contacto-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ==================== FORMULARIO ==================== */
+.contacto-form-container {
+  background: var(--bg-light-cream);
+  border: 3px solid var(--color-primary-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-white);
+  border: 2px solid var(--color-primary-gold);
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-family: "Georgia", serif;
+  color: #333;
+  transition: all var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary-gold);
+  box-shadow: 0 0 10px rgba(244, 209, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-enviar {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-gold),
+    var(--color-secondary-gold)
+  );
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 5px 20px rgba(244, 209, 136, 0.3);
+  margin-top: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.btn-enviar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(244, 209, 136, 0.5);
+}
+
+.btn-enviar i {
+  font-size: 16px;
+}
+
+.form-info {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}
+
+.form-info i {
+  color: var(--color-primary-gold);
+  margin-right: 5px;
+}
+
+/* ==================== INFORMACIÓN DE CONTACTO ==================== */
+.contacto-info-container {
+  background: var(--bg-light-cream);
+  border: 3px solid var(--color-primary-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-secondary-gold);
+  font-size: 16px;
+}
+
+.info-item i {
+  font-size: 20px;
+  color: var(--color-primary-gold);
+  width: 30px;
+  text-align: center;
+}
+
+.info-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.info-item a:hover {
+  color: var(--color-secondary-gold);
+  text-decoration: underline;
+}
+
+/* ==================== REDES SOCIALES ==================== */
+.social-icons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 20px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(244, 209, 136, 0.3);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(244, 209, 136, 0.5);
+  background: var(--color-secondary-gold);
+}
+
+/* ==================== FOTO DE PERFIL ==================== */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 4px solid var(--color-primary-gold);
+  box-shadow: 0 8px 25px rgba(244, 209, 136, 0.4);
+  margin: var(--spacing-md) 0;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==================== NEWSLETTER ==================== */
+.newsletter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  width: 100%;
+  max-width: 300px;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-white);
+  border: 2px solid var(--color-primary-gold);
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  transition: all var(--transition-fast);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-secondary-gold);
+  box-shadow: 0 0 8px rgba(244, 209, 136, 0.3);
+}
+
+.btn-newsletter {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary-gold);
+  border-radius: 30px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-secondary-gold);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  transition: all var(--transition-fast);
+}
+
+.btn-newsletter i {
+  font-size: 16px;
+}
+
+.btn-newsletter:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-gold),
+    var(--color-secondary-gold)
+  );
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(244, 209, 136, 0.4);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  .contacto-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .contacto-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-section {
+    padding: 140px var(--spacing-md) 0; /* 🔧 Sin padding-bottom */
+  }
+
+  .contacto-container {
+    padding-bottom: var(--spacing-xl); /* 🔧 Menos espacio en móvil */
+  }
+
+  .contacto-title {
+    font-size: 36px;
+  }
+
+  .contacto-form-container,
+  .contacto-info-container {
+    padding: var(--spacing-lg);
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-title {
+    font-size: 28px;
+  }
+
+  .contacto-form-container,
+  .contacto-info-container {
+    padding: var(--spacing-md);
+  }
+
+  .btn-enviar {
+    width: 100%;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

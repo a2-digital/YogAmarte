@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="YogAmarte - Terapias Holísticas y Yoga con Paola Bergmann. Encuentra tu armonía interna a través del yoga, terapias chamánicas y retiros transformadores."
+    />
+    <meta
+      name="keywords"
+      content="yoga, terapias holísticas, chamanismo, retiros, sanación, Paola Bergmann, yogamarte"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/Logo.jpg" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>YogAmarte - Terapias Holísticas y Yoga con Paola Bergmann</title>
+  </head>
+  <body data-page="index">
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ==================== BANNER ==================== -->
+    <section class="banner" id="inicio">
+      <div class="banner-container">
+        <div class="banner-image-wrapper">
+          <img
+            src="./images/banner.jpg"
+            alt="Sesión de Yoga"
+            class="banner-main-photo"
+          />
+          <div class="circle-overlay right">
+            <img
+              src="./images/tiger_yoga.jpeg"
+              alt="Paola Bergmann - Instructora de Yoga"
+            />
+          </div>
+        </div>
+
+        <div class="banner-text">
+          <h1 class="banner-title">ENCUENTRA TU ARMONÍA INTERNA</h1>
+          <p class="banner-subtitle">Terapias Holísticas y Yoga</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="services" id="servicios">
+      <div class="services-container">
+        <h2 class="services-title servicios-titulo">SERVICIOS</h2>
+        <p class="services-subtitle servicios-subtitulo">
+          Haz clic en cada servicio para conocer más detalles
+        </p>
+
+        <div class="services-grid">
+          <!-- Servicio 1 -->
+          <div
+            class="service-card"
+            id="servicio1"
+            onclick="openModal('modal1')"
+          >
+            <div class="service-icon">🧘‍♀️</div>
+            <h3>Mi concepto yóguico con Sesiones individuales y grupales</h3>
+            <p>
+              Practicaremos yoga vinyasa flow y yin-yoga utilizando herramientas
+              holísticas que te permitirán conectar contigo mismo. Con los 4
+              elementos y los elementales llegarás a la esencia más profunda de
+              tu ser. De tal forma que puedas amarte a ti mismo tal y como eres.
+            </p>
+            <button class="learn-more-btn">✦ Click para ver más ✦</button>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div
+            class="service-card"
+            id="servicio2"
+            onclick="openModal('modal2')"
+          >
+            <div class="service-icon">🍀</div>
+            <h3>Terapias Holísticas<br />(Chamánica y Angelical)</h3>
+            <p>
+              Poderosas sesiones de sanación con enfoque terapéutico en el que
+              bloqueos energéticos, dolencias específicas y traumas del pasado
+              se disuelven y tu cuerpo vuelve al equilibrio.
+            </p>
+            <button class="learn-more-btn">✦ Click para ver más ✦</button>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div
+            class="service-card"
+            id="servicio3"
+            onclick="openModal('modal3')"
+          >
+            <div class="service-icon">🌄</div>
+            <h3>Retiros Holísticos</h3>
+            <p>
+              Desconecta del estrés, date un tiempo de amor, una estadía en la
+              naturaleza para reconectar contigo y tu cuerpo. Te prometo que
+              saldrás renovado.
+            </p>
+            <button class="learn-more-btn">✦ Click para ver más ✦</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MI FILOSOFÍA ==================== -->
+    <section class="filosofia" id="filosofia">
+      <div class="filosofia-container">
+        <div class="filosofia-icon">Y</div>
+        <div class="filosofia-content">
+          <h2 class="filosofia-titulo">MI FILOSOFÍA</h2>
+          <div class="filosofia-bloque">
+            <p>
+              🌲 <b>No ves el bosque porque estás enfocado en los árboles:</b>
+              Para sanar afuera es necesario ir hacia dentro. Te ayudaré a
+              conectar con tus bloqueos emocionales y te guiaré en el proceso de
+              sanarlos, para que puedas sentirte libre y mostrarte auténtico tal
+              y como eres.
+            </p>
+          </div>
+          <div class="filosofia-bloque">
+            <p>
+              🫶 <b>YogÁmarte:</b>
+              Aprende a amarte por medio del yoga y en combinación con
+              herramientas holísticas y chamánicas que sacarán la mejor versión
+              de ti.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MODALES ==================== -->
+
+    <!-- Modal 1: Sesiones de Yoga -->
+    <div id="modal1" class="modal" onclick="closeModal('modal1')">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+        <img
+          src="./images/mi_concepto_yoguico.png"
+          alt="Sesiones de Yoga"
+          class="modal-image"
+        />
+        <div class="modal-body">
+          <h2>Sesiones de Yoga</h2>
+          <p>
+            He desarrollado un concepto en el que practicaremos yoga en
+            concordancia con los 4 elementos, los 4 animales de poder chamánicos
+            y los elementales. Podrás conectar de una forma profunda a través de
+            asanas y meditaciones guiadas, respiración consciente, mantras,
+            aceites esenciales que te llevarán a liberar bloqueos y vivir la
+            mejor experiencia de ti mismo. Podemos adaptar las clases
+            personalizadas a tu medida y a tus necesidades.
+          </p>
+
+          <p>
+            Las sesiones pueden ser individuales o en grupos pequeños,
+            permitiendo una atención personalizada que respeta tu ritmo y
+            necesidades específicas.
+          </p>
+
+          <div class="modal-info">
+            <p><strong>📅 Duración:</strong> 60-90 minutos</p>
+            <p>
+              <strong>📍 Modalidad:</strong> Virtual - Consultar si requieres
+              presencial
+            </p>
+            <p><strong>💰 Inversión:</strong> Consultar precios</p>
+            <p><strong>📨 Correo:</strong> yogamarte999@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Terapia Chamánica -->
+    <div id="modal2" class="modal" onclick="closeModal('modal2')">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+        <img
+          src="./images/terapia_chamanica.png"
+          alt="Terapia Chamánica"
+          class="modal-image"
+        />
+        <div class="modal-body">
+          <h2>Terapia Chamánica</h2>
+          <p>
+            En la sesión de sanación chamánica te ayudo a liberar bloqueos
+            energéticos y traumas, liberas todo aquello que te impide avanzar.
+            Como si estás buscando una mejor salud, relaciones más plenas o
+            éxito profesional, todo lo que se manifiesta en tu vida tiene un
+            origen energético. Después de la sesión tus energías fluyen de nuevo
+            para que puedas crear la vida que deseas. Una sesión de sanación es
+            un viaje transformador de regreso a ti mismo, a esa parte de ti que
+            aún está conectada con la Fuente.
+          </p>
+
+          <p>
+            Durante una sesión de sanación angelical, trabajo con las altas
+            energías de los arcángeles para tratar enfermedades y síntomas
+            físicos en particular. Es un método extraordinario y efectivo para
+            tratar dolencias físicas. Las cualidades de los diversos arcángeles
+            representan los diferentes elementos que componen nuestro cuerpo.
+            Con la ayuda de las energías arcangélicas, las cosas pueden
+            disolverse, equilibrarse, materializarse y reestructurarse a nivel
+            físico. Durante la sesión, se da un impulso más intenso al cuerpo
+            para devolverlo a su estado original de sanación y activar sus
+            poderes de autocuración.
+          </p>
+
+          <div class="modal-info">
+            <p><strong>📅 Duración:</strong> 60 minutos</p>
+            <p>
+              <strong>📍 Modalidad:</strong> Virtual - Consultar si requieres
+              presencial
+            </p>
+            <p><strong>💰 Inversión:</strong> Consultar precios</p>
+            <p><strong>📨 Correo:</strong> yogamarte999@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Retiros -->
+    <div id="modal3" class="modal" onclick="closeModal('modal3')">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+        <img
+          src="./images/retiro.png"
+          alt="Retiros Holísticos"
+          class="modal-image"
+        />
+        <div class="modal-body">
+          <h2>Retiros Holísticos</h2>
+          <p>
+            ¿Sientes que necesitas un respiro? ¿Que el estrés domina tu vida,
+            estás siempre cansado e irascible? Un retiro te puede ayudar a
+            centrarte de nuevo, a reconectar con tu esencia, a abandonar
+            patrones dañinos que se repiten. En grupos pequeños tienes la
+            posibilidad de hospedarte en un lugar en la naturaleza entre las
+            montañas. Durante esa estancia tendrás acceso a una alimentación
+            consciente, practicaremos yoga, tendrás terapias chamánicas de
+            sanación sin plantas y tiempo libre para explorar los bellos
+            alrededores.
+          </p>
+
+          <p>
+            Los retiros son la oportunidad perfecta para desconectar del estrés
+            diario y reconectar contigo mismo. Un espacio seguro para sanar,
+            crecer y transformarte rodeado de personas con tu misma vibración.
+          </p>
+
+          <div class="modal-info">
+            <p><strong>📅 Duración:</strong> Entre 3 a 5 días</p>
+            <p>
+              <strong>📍 Ubicación:</strong> El Santuario - Medellín, Colombia
+            </p>
+            <p><strong>👥 Grupo:</strong> Máximo 6 personas</p>
+            <p><strong>💰 Inversión:</strong> Consultar precios y fechas</p>
+            <p><strong>📨 Correo:</strong> yogamarte999@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/load-navbar.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/traduccion.js"></script>
+  </body>
+</html>

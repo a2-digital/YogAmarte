@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/nav.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          id="logoImg"
+          src="../images/Logo_without.png"
+          alt="YogAmarte Logo"
+        />
+      </div>
+
+      <!-- ✅ NUEVO: Menú Hamburguesa -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../paginas/sobre_mi.html">Sobre Mi</a></li>
+        <li><a href="../paginas/testimonio.html">Testimonios</a></li>
+        <li><a href="../paginas/contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="language-switch">
+          <div id="langToggle" class="lang-toggle es" onclick="toggleIdioma()">
+            <div class="lang-flag" id="flag"></div>
+          </div>
+        </div>
+
+        <span class="user-info">Paola Bergmann</span>
+        <button class="btn-reservar" onclick="scrollToReserva()">
+          Reservar Ahora
+        </button>
+      </div>
+    </nav>
+
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+/* ==================== VARIABLES GLOBALES YOGAMARTE ==================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  /* ========== COLORES PRINCIPALES ========== */
+  --color-primary-gold: #f4d188;
+  --color-secondary-gold: #bf8d50;
+  --color-white: #ffffff;
+  --color-text-light: #f0f0f0;
+  --color-text-gray: #e0e0e0;
+  --color-text-subtle: #b8b8b8;
+
+  /* ========== COLORES DE FONDO ========== */
+  --bg-dark: rgba(0, 0, 0, 0.3);
+  --bg-darker: rgba(0, 0, 0, 0.5);
+  --bg-darkest: rgba(0, 0, 0, 0.7);
+  --bg-modal: #1f4c52;
+  --bg-overlay: rgba(0, 0, 0, 0.85);
+  --bg-card: rgba(35, 84, 89, 0.8);
+  --bg-light-cream: #f5f5e8;
+  --bg-dark-teal: #1a3a3a;
+
+  /* ========== GRADIENTES ========== */
+  --gradient-gold: linear-gradient(135deg, #f4d188, #bf8d50);
+  --gradient-purple: linear-gradient(135deg, #8b6f9e, #6d5a7e);
+  --gradient-teal: linear-gradient(135deg, #1a3a3a 0%, #0f2626 100%);
+
+  /* ========== ESPACIADO ========== */
+  --spacing-xs: 10px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 60px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 100px;
+
+  /* ========== BORDER RADIUS ========== */
+  --radius-sm: 10px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 50%;
+
+  /* ========== BORDES ========== */
+  --border-thin: 1.5px;
+  --border-medium: 2.5px;
+  --border-thick: 3px;
+
+  /* ========== TRANSICIONES ========== */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.6s ease;
+
+  /* ========== SOMBRAS ========== */
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 15px 40px rgba(244, 209, 136, 0.3);
+  --shadow-gold: 0 0 10px rgba(244, 209, 136, 0.3);
+}
+
+/* ========== RESET GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: var(--color-white);
+  overflow-x: hidden;
+  background-image: url("../images/Fondo_web.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.6;
+}
+
+/* ========== UTILIDADES ========== */
+.text-center {
+  text-align: center;
+}
+.text-gold {
+  color: var(--color-primary-gold);
+}
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}

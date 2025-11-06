@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lee testimonios reales de personas que han transformado sus vidas con las terapias y sesiones de yoga de Paola Bergmann."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/Logo.jpg" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/testimonio.css" />
+
+    <title>Testimonios - YogAmarte</title>
+  </head>
+  <body data-page="testimonio">
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ==================== TESTIMONIOS HEADER ==================== -->
+    <section class="testimonios-header">
+      <div class="header-container">
+        <h1 class="main-title">Historias que Inspiran Confianza</h1>
+        <p class="main-subtitle">
+          Experiencias reales de transformación y sanación
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS CARRUSEL ==================== -->
+    <section class="testimonios-section" id="testimonios">
+      <div class="testimonios-container">
+        <!-- Controles del carrusel -->
+        <button
+          class="carousel-btn prev"
+          onclick="cambiarTestimonio(-1)"
+          aria-label="Anterior"
+        >
+          <span>‹</span>
+        </button>
+
+        <!-- Carrusel principal -->
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Testimonio 1: Tanja -->
+            <div class="testimonio-card active" data-index="0">
+              <div class="card-avatar">
+                <div class="avatar-circle">T</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Tanja</h3>
+                <p class="card-location testimonio-ubicacion">Suiza</p>
+                <div class="stars">★★★★★</div>
+                <p class="card-text">
+                  Paola es una persona muy sensible y con una gran capacidad de
+                  percepción. Logró liberar algunos de mis bloqueos, y después
+                  de las sesiones de sanación con ella, me siento más libre, más
+                  viva y más conectada con mi poder interior. Se nota que Paola
+                  tiene un interés genuino en ayudar a los demás. ¡La recomiendo
+                  sin duda!
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio 2: Renate -->
+            <div class="testimonio-card" data-index="1">
+              <div class="card-avatar">
+                <div class="avatar-circle">R</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Renate</h3>
+                <p class="card-location testimonio-ubicacion">Austria</p>
+                <div class="stars">★★★★★</div>
+                <p class="card-text">
+                  Paola es una guía espiritual con mucha sensibilidad que te
+                  lleva a través de tus temas y bloqueos importantes y llega al
+                  meollo del asunto, haciéndotelo comprender fácilmente. Muestra
+                  caminos claros por los que podemos trabajar juntas para poder
+                  avanzar en el crecimiento. Sus recomendaciones han contribuido
+                  enormemente a mi desarrollo positivo. Sus terapias virtuales
+                  son mágicas y efectivas incluso en diferentes zonas horarias.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio 3: Esther -->
+            <div class="testimonio-card" data-index="2">
+              <div class="card-avatar">
+                <div class="avatar-circle">E</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Esther</h3>
+                <p class="card-location testimonio-ubicacion">Suiza</p>
+                <div class="stars">★★★★★</div>
+                <p class="card-text">
+                  Reservé una sesión de sanación chamánica con Paola y enseguida
+                  me sentí muy cómoda y a gusto. Su forma profesional y empática
+                  de llevar la terapia me permitieron entrar rápida y
+                  profundamente en aquello que me bloqueaba. Finalmente, me
+                  propuso un ejercicio para profundizar y trabajar en mí misma.
+                  Toda la sesión fue una experiencia enriquecedora. ¡Muy
+                  recomendable!
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio 4: Martina -->
+            <div class="testimonio-card" data-index="3">
+              <div class="card-avatar">
+                <div class="avatar-circle">M</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Martina</h3>
+                <p class="card-location testimonio-ubicacion">Alemania</p>
+                <div class="stars">★★★★★</div>
+                <p class="card-text">
+                  Querida Paola, tuve el privilegio de disfrutar de una sesión
+                  de sanación chamánica contigo. Gracias a tu trabajo consciente
+                  y a tu conexión con el mundo espiritual, me sentí protegida de
+                  una forma maravillosa en todo momento. Inmediatamente después
+                  de la sesión, sentí mucha más ligereza y paz interior.
+                </p>
+              </div>
+            </div>
+            <div class="testimonio-card">
+              <div class="card-avatar">
+                <div class="avatar-circle">B</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Brigitte</h3>
+                <p class="card-location testimonio-ubicacion">Alemania</p>
+                <div class="stars">★★★★★</div>
+                <p class="card-text">
+                  La empatía de Paola me hizo sentir como en casa, y sus
+                  sesiones de sanación chamánica contribuyeron enormemente a mi
+                  sanación. Muchas gracias, querida Paola Brigitte.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-btn next"
+          onclick="cambiarTestimonio(1)"
+          aria-label="Siguiente"
+        >
+          <span>›</span>
+        </button>
+
+        <!-- Navegación de avatares -->
+        <div class="avatars-navigation">
+          <div class="avatars-track" id="avatarsTrack">
+            <div class="avatar-nav active" onclick="irATestimonio(0)">
+              <div class="avatar-small">T</div>
+            </div>
+            <div class="avatar-nav" onclick="irATestimonio(1)">
+              <div class="avatar-small">R</div>
+            </div>
+            <div class="avatar-nav" onclick="irATestimonio(2)">
+              <div class="avatar-small">E</div>
+            </div>
+            <div class="avatar-nav" onclick="irATestimonio(3)">
+              <div class="avatar-small">M</div>
+            </div>
+
+            <div class="avatar-nav" onclick="irATestimonio(4)">
+              <div class="avatar-small">B</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicador de posición -->
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="../js/nav.js"></script>
+    <script src="../js/load-navbar.js"></script>
+    <script src="../js/load-footer.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/traduccion.js"></script>
+  </body>
+</html>

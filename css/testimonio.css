@@ -1,0 +1,386 @@
+/* ==================== TESTIMONIOS OPTIMIZADO ==================== */
+
+@import url("variables.css");
+
+.testimonios-section {
+  background: rgba(26, 58, 58, 0.85);
+}
+
+/* ========== HEADER TESTIMONIOS ========== */
+.testimonios-header {
+  padding-top: 100px;
+  padding-bottom: var(--spacing-xl);
+  text-align: center;
+  background: rgba(26, 58, 58, 0.85);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.main-title {
+  font-size: 48px;
+  color: var(--color-primary-gold);
+  margin-bottom: var(--spacing-md);
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.main-subtitle {
+  font-size: 22px;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* ========== TESTIMONIOS SECTION ========== */
+.testimonios-section {
+  padding: var(--spacing-md) var(--spacing-md);
+  position: relative;
+  min-height: 600px;
+}
+
+.testimonios-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ========== CARRUSEL ========== */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 80px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform var(--transition-medium);
+  position: relative;
+}
+
+.testimonio-card {
+  min-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all var(--transition-medium);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.testimonio-card.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  position: relative;
+}
+
+.testimonio-card {
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  border: 2px solid var(--color-primary-gold);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  min-height: 400px;
+}
+
+/* ========== AVATAR CIRCULAR ========== */
+.card-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--color-white);
+  border: 4px solid var(--color-white);
+  box-shadow: 0 8px 30px rgba(244, 209, 136, 0.4);
+  text-transform: uppercase;
+}
+
+/* ========== CONTENIDO ========== */
+.card-content {
+  flex: 1;
+  text-align: left;
+}
+
+.card-name {
+  font-size: 32px;
+  color: var(--color-primary-gold);
+  margin-bottom: var(--spacing-xs);
+  font-weight: normal;
+}
+
+.card-location {
+  font-size: 18px;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+.stars {
+  font-size: 24px;
+  color: var(--color-primary-gold);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 5px;
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  text-align: justify;
+}
+
+/* ========== BOTONES DEL CARRUSEL ========== */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-primary-gold);
+  background: transparent;
+  color: var(--color-primary-gold);
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+  background: var(--gradient-gold);
+  color: var(--color-white);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 5px 20px rgba(244, 209, 136, 0.5);
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.carousel-btn span {
+  line-height: 1;
+}
+
+/* ========== NAVEGACIÓN DE AVATARES ========== */
+.avatars-navigation {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-lg) 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.avatars-track {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs);
+}
+
+.avatar-nav {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.avatar-small {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-full);
+  border: 2px solid rgba(244, 209, 136, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-white);
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.avatar-nav:hover .avatar-small {
+  transform: scale(1.15);
+  border-color: var(--color-primary-gold);
+  box-shadow: 0 5px 20px rgba(244, 209, 136, 0.4);
+}
+
+.avatar-nav.active .avatar-small {
+  background: var(--gradient-gold);
+  border: 3px solid var(--color-white);
+  transform: scale(1.2);
+  box-shadow: 0 5px 25px rgba(244, 209, 136, 0.6);
+}
+
+/* ========== DOTS INDICADORES ========== */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: 5px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  background: rgba(244, 209, 136, 0.3);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dot:hover {
+  background: rgba(244, 209, 136, 0.6);
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background: var(--color-primary-gold);
+  width: 30px;
+  border-radius: 6px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .carousel-wrapper {
+    margin: 0 60px;
+  }
+
+  .testimonio-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-xl);
+  }
+
+  .card-content {
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .avatar-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+  }
+
+  .card-name {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonios-header {
+    padding-top: 120px;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .main-subtitle {
+    font-size: 18px;
+  }
+
+  .carousel-wrapper {
+    margin: 0 50px;
+  }
+
+  .testimonio-card {
+    padding: var(--spacing-lg);
+    min-height: auto;
+  }
+
+  .avatar-circle {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+  }
+
+  .card-name {
+    font-size: 24px;
+  }
+
+  .card-location {
+    font-size: 16px;
+  }
+
+  .stars {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+  }
+
+  .avatar-small {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .avatars-track {
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    margin: 0 40px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .avatar-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  .card-name {
+    font-size: 22px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+
+  .avatar-small {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}

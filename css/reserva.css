@@ -1,0 +1,288 @@
+/* ==================== RESERVA OPTIMIZADA ==================== */
+
+@import url("variables.css");
+
+.reserva-section {
+  min-height: 100vh;
+  padding: 120px var(--spacing-md) var(--spacing-lg);
+  background: rgba(26, 58, 58, 0.85);
+  position: relative;
+  margin-bottom: 0;
+}
+
+.reserva-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ========== TÍTULO Y SUBTÍTULO ========== */
+.reserva-title {
+  font-size: 42px;
+  color: var(--color-primary-gold);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: var(--spacing-xs);
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
+
+.reserva-subtitle {
+  font-size: 18px;
+  color: var(--color-text-light);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  font-family: "Playfair Display", serif;
+}
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+.reserva-content {
+  background: var(--bg-light-cream);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* ========== PASOS (HEADERS) ========== */
+.reserva-pasos {
+  font-size: 22px;
+  color: var(--bg-dark-teal);
+  font-weight: 600;
+  margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-secondary-gold);
+  font-family: "Playfair Display", serif;
+}
+
+.reserva-pasos:first-of-type {
+  margin-top: 0;
+}
+
+/* ========== PASO 1: TIPOS DE CLASE ========== */
+.class-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.class-type-card {
+  background: var(--color-white);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.class-type-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-secondary-gold);
+}
+
+.class-type-card.selected {
+  background: var(--bg-dark-teal);
+  border-color: var(--color-primary-gold);
+  box-shadow: 0 8px 20px rgba(44, 95, 95, 0.3);
+}
+
+.class-type-card .icon {
+  font-size: 42px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.class-type-card h3 {
+  font-size: 17px;
+  color: var(--bg-dark-teal);
+  margin-bottom: var(--spacing-xs);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.class-type-card.selected h3 {
+  color: var(--color-primary-gold);
+}
+
+.class-type-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: var(--spacing-xs);
+}
+
+.class-type-card.selected p {
+  color: var(--color-text-light);
+}
+
+.class-type-card .duration {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--color-secondary-gold);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-top: var(--spacing-xs);
+}
+
+.class-type-card.selected .duration {
+  background: var(--color-primary-gold);
+  color: var(--bg-dark-teal);
+}
+
+/* ========== PASO 2: CALENDLY ========== */
+.calendar-section {
+  margin-bottom: 0; /* ✅ Sin margen extra */
+}
+
+.descripcion {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+/* ✅ ARREGLADO: Contenedor que se ajusta automáticamente */
+.calendly-container {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: visible; /* ✅ CAMBIO: De hidden a visible para permitir expansión */
+  background: transparent;
+}
+
+/* Cuando Calendly está cargado */
+.calendly-container.calendly-loaded {
+  background: white;
+  border: 2px solid var(--bg-light-cream);
+  min-height: 700px; /* ✅ Altura mínima aumentada */
+  height: 700px; /* ✅ Se ajusta al contenido */
+}
+
+/* Placeholder cuando no hay selección */
+.calendly-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px; /* ✅ Reducido aún más */
+  background: rgba(255, 255, 255, 0.5); /* ✅ Semi-transparente */
+  border: 2px dashed var(--color-secondary-gold); /* ✅ Borde punteado */
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.placeholder-icon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.4;
+}
+
+.calendly-placeholder p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.calendly-placeholder.error {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-style: solid;
+}
+
+.calendly-placeholder.error p {
+  color: #856404;
+}
+
+.calendly-placeholder.error strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-size: 18px;
+}
+
+/* ========== MENSAJE DE CONFIRMACIÓN ========== */
+.confirmation-message {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-md);
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirmation-icon {
+  font-size: 56px;
+  margin-bottom: var(--spacing-md);
+}
+
+.confirmation-message h3 {
+  font-size: 24px;
+  margin-bottom: var(--spacing-sm);
+  font-family: "Playfair Display", serif;
+}
+
+.confirmation-message p {
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .reserva-section {
+    padding: 100px var(--spacing-md) var(--spacing-lg);
+  }
+
+  .reserva-title {
+    font-size: 32px;
+  }
+
+  .reserva-subtitle {
+    font-size: 16px;
+  }
+
+  .reserva-content {
+    padding: var(--spacing-lg);
+  }
+
+  .class-types {
+    grid-template-columns: 1fr;
+  }
+
+  .calendly-placeholder {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reserva-title {
+    font-size: 28px;
+  }
+
+  .reserva-pasos {
+    font-size: 20px;
+  }
+
+  .class-type-card .icon {
+    font-size: 36px;
+  }
+
+  .calendly-placeholder {
+    min-height: 180px;
+    padding: var(--spacing-md);
+  }
+}

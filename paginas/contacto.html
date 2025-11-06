@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/Logo.jpg" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Contacto - YogAmarte</title>
+  </head>
+  <body data-page="contacto">
+    <!-- ==================== NAVBAR ==================== -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ==================== SECCIÓN CONTACTO ==================== -->
+    <section class="contacto-section" id="contacto">
+      <div class="contacto-container">
+        <!-- Título principal -->
+        <h1 class="contacto-title">Conecta Conmigo</h1>
+
+        <div class="contacto-content">
+          <!-- Columna izquierda: Formulario -->
+          <div class="contacto-form-container">
+            <form class="contacto-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="from_name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="from_email"
+                  placeholder="Correo Electrónico"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Teléfono (opcional)"
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Escribe tu mensaje aquí..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-enviar">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Mensaje
+              </button>
+            </form>
+
+            <p class="form-info">
+              <i class="fas fa-info-circle"></i>
+              Te responderemos en menos de 24 horas
+            </p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="contacto-info-container">
+            <div class="contacto-info">
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+573001234567">012-457800 8670</a>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:yogamarte999@gmail.com"
+                  >yogamarte999@gmail.com</a
+                >
+              </div>
+
+              <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <a
+                  href="https://wa.me/573001234567?text=Hola%20Paola,%20me%20interesa%20información%20sobre%20tus%20servicios"
+                  target="_blank"
+                >
+                  Enviar WhatsApp
+                </a>
+              </div>
+
+              <div class="social-icons">
+                <a
+                  href="https://wa.me/573001234567"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WhatsApp"
+                  title="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a
+                  href="https://instagram.com/yogamarte"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="mailto:yogamarte999@yogamarte.com"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Gmail"
+                  title="Gmail"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+
+              <div class="profile-image">
+                <img src="../images/contact.jpg" alt="Paola Bergmann" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="../js/nav.js"></script>
+    <script src="../js/load-navbar.js"></script>
+    <script src="../js/load-footer.js"></script>
+    <script src="../js/traduccion.js"></script>
+
+    <!-- EmailJS (debe ir antes del main.js o funciones.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Tu script con EmailJS -->
+    <script src="../js/funciones.js"></script>
+    <script src="../js/contacto.js"></script>
+  </body>
+</html>

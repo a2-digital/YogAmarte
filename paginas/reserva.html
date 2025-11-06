@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reserva tu sesión de yoga, terapia chamánica o retiro holístico con Paola Bergmann. Elige tu horario disponible."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/Logo.jpg" />
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="../css/reserva.css" />
+    <link
+      rel="stylesheet"
+      href="https://assets.calendly.com/assets/external/widget.css"
+    />
+
+    <title>Reserva tu Sesión - YogAmarte</title>
+  </head>
+  <body data-page="reserva">
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ==================== RESERVA ==================== -->
+    <section class="reserva-section">
+      <div class="reserva-container">
+        <h1 class="reserva-title">Reserva Tu Clase</h1>
+        <h3 class="reserva-subtitle">Encuentra tu momento y bienestar</h3>
+
+        <div class="reserva-content">
+          <!-- PASO 1: TIPOS DE CLASE -->
+          <h4 class="reserva-pasos">Paso 1: Elige tu Tipo de Clase</h4>
+          <div class="class-types">
+            <div
+              class="class-type-card"
+              data-calendly-url="https://calendly.com/andriuandres6/sesion-individual"
+            >
+              <div class="icon">🧘‍♀️</div>
+              <h3>Sesión Individual</h3>
+              <p>Atención personalizada 1:1</p>
+              <span class="duration">60 min</span>
+            </div>
+
+            <div
+              class="class-type-card"
+              data-calendly-url="TU_URL_CALENDLY_GRUPAL"
+            >
+              <div class="icon">👥</div>
+              <h3>Sesión Grupal</h3>
+              <p>Comparte la experiencia</p>
+              <span class="duration">90 min</span>
+            </div>
+
+            <div
+              class="class-type-card"
+              data-calendly-url="https://calendly.com/andriuandres6/terapia-chamanica"
+            >
+              <div class="icon">🌿</div>
+              <h3>Terapia Chamánica</h3>
+              <p>Sanación profunda</p>
+              <span class="duration">120 min</span>
+            </div>
+
+            <div
+              class="class-type-card"
+              data-calendly-url="TU_URL_CALENDLY_RETIRO"
+            >
+              <div class="icon">🏔️</div>
+              <h3>Retiros Holísticos</h3>
+              <p>Experiencia completa</p>
+              <span class="duration">Día completo</span>
+            </div>
+          </div>
+
+          <!-- PASO 2: CALENDARIO -->
+          <h4 class="reserva-pasos">Paso 2: Selecciona Fecha y Hora</h4>
+          <div class="calendar-section">
+            <p class="descripcion">
+              Selecciona un tipo de clase arriba para ver los horarios
+              disponibles
+            </p>
+
+            <div class="calendly-container" id="calendlyContainer">
+              <div class="calendly-placeholder">
+                <div class="placeholder-icon">📅</div>
+                <p>Primero selecciona el tipo de clase que deseas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mensaje de confirmación -->
+          <div
+            class="confirmation-message"
+            id="confirmationMessage"
+            style="display: none"
+          >
+            <div class="confirmation-icon">✅</div>
+            <h3>¡Reserva Confirmada!</h3>
+            <p>Revisa tu correo electrónico para los detalles de tu clase</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="../js/nav.js"></script>
+    <script src="../js/load-navbar.js"></script>
+    <script src="../js/load-footer.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/traduccion.js"></script>
+
+    <!-- Calendly -->
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script src="../js/reserva-calendly.js"></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+{
+  "Nav": {
+    "inicio": "Inicio",
+    "sobre_mi": "Sobre Mi",
+    "testimonios": "Testimonios",
+    "contacto": "Contacto",
+    "reservar": "Reservar Ahora"
+  },
+  "Index": {
+    "banner": {
+      "titulo": "ENCUENTRA TU ARMONÍA INTERNA",
+      "subtitulo": "Terapias Holísticas y Yoga"
+    },
+    "servicios": {
+      "titulo": "SERVICIOS",
+      "subtitulo": "Haz clic en cada servicio para conocer más detalles",
+      "items": [
+        {
+          "id": "servicio1",
+          "icono": "🧘‍♀️",
+          "titulo": "Mi concepto yóguico con Sesiones individuales y grupales",
+          "descripcion": "Practicaremos yoga vynasa flow y yin-yoga utilizando herramientas holísticas que te permitirán conectar contigo mismo. Con los 4 elementos y los elementales llegarás a la esencia más profunda de tu ser. De tal forma que puedas amarte a ti mismo tal y como eres.",
+          "textoBoton": "✦ Click para ver más ✦"
+        },
+        {
+          "id": "servicio2",
+          "icono": "🍀",
+          "titulo": "Terapias Holísticas (Chamánica y Angelical)",
+          "descripcion": "Poderosas sesiones de sanación con enfoque terapéutico en el que bloqueos energéticos, dolencias específicas y traumas del pasado se disuelven y tu cuerpo vuelve al equilibrio.",
+          "textoBoton": "✦ Click para ver más ✦"
+        },
+        {
+          "id": "servicio3",
+          "icono": "🌄",
+          "titulo": "Retiros Holísticos",
+          "descripcion": "Desconecta del estrés, date un tiempo de amor, una estadía en la naturaleza para reconectar contigo y tu cuerpo. Te prometo que saldrás renovado.",
+          "textoBoton": "✦ Click para ver más ✦"
+        }
+      ]
+    },
+    "filosofia": {
+      "titulo": "MI FILOSOFÍA",
+      "bloques": [
+        {
+          "icono": "🌲",
+          "titulo": "No ves el bosque porque estás enfocado en los árboles:",
+          "texto": "Para sanar afuera es necesario ir hacia dentro. Te ayudaré a conectar con tus bloqueos emocionales y te guiaré en el proceso de sanarlos, para que puedas sentirte libre y mostrarte auténtico tal y como eres."
+        },
+        {
+          "icono": "🫶",
+          "titulo": "YogÁmarte:",
+          "texto": "Aprende a amarte por medio del yoga y en combinación con herramientas holísticas y chamánicas que sacarán la mejor versión de ti."
+        }
+      ]
+    },
+    "modales": [
+      {
+        "id": "modal1",
+        "titulo": "Sesiones de Yoga",
+        "imagen": "./images/Mi_concepto_yóguico.png",
+        "descripcion": [
+          "He desarrollado un concepto en el que practicaremos yoga en concordancia con los 4 elementos, los 4 animales de poder chamánicos y los elementales. Podrás conectar de una forma profunda a través de asanas y meditaciones guiadas, respiración consciente, mantras, aceites esenciales que te llevarán a liberar bloqueos y vivir la mejor experiencia de ti mismo. Podemos adaptar las clases personalizadas a tu medida y a tus necesidades.",
+          "Las sesiones pueden ser individuales o en grupos pequeños, permitiendo una atención personalizada que respeta tu ritmo y necesidades específicas."
+        ],
+        "info": {
+          "duracion": "60-90 minutos",
+          "modalidad": "Virtual (consultar si requieres presencial)",
+          "inversion": "Consultar precios y fechas al correo",
+          "correo": "yogamarte999@gmail.com"
+        }
+      },
+      {
+        "id": "modal2",
+        "titulo": "Terapia Holísticas",
+        "imagen": "./images/Terapia_Chamánica.png",
+        "descripcion": [
+          "**Terapia Chamánica**",
+          "En la sesión de sanación chamánica te ayudo a liberar bloqueos energéticos y traumas, liberas todo aquello que te impide avanzar. Como si estás buscando una mejor salud, relaciones más plenas o éxito profesional, todo lo que se manifiesta en tu vida tiene un origen energético. Después de la sesión tus energías fluyen de nuevo para que puedas crear la vida que deseas. Una sesión de sanación es un viaje transformador de regreso a ti mismo, a esa parte de ti que aún está conectada con la Fuente.",
+          "**Terapia Angelical**",
+          "Durante una sesión de sanación angelical, trabajo con las altas energías de los arcángeles para tratar enfermedades y síntomas físicos en particular. Es un método extraordinario y efectivo para tratar dolencias físicas. Las cualidades de los diversos arcángeles representan los diferentes elementos que componen nuestro cuerpo. Con la ayuda de las energías arcangélicas, las cosas pueden disolverse, equilibrarse, materializarse y reestructurarse a nivel físico. Durante la sesión, se da un impulso más intenso al cuerpo para devolverlo a su estado original de sanación y activar sus poderes de autocuración."
+        ],
+        "info": {
+          "duracion": "60 minutos",
+          "modalidad": "Virtual (consultar si requieres presencial)",
+          "inversion": "Consultar precios y fechas al correo",
+          "correo": "yogamarte999@gmail.com"
+        }
+      },
+      {
+        "id": "modal3",
+        "titulo": "Retiros Holísticos",
+        "imagen": "./images/Retiro.png",
+        "descripcion": [
+          "¿Sientes que necesitas un respiro? ¿Que el estrés domina tu vida, estás siempre cansado o irascible? Un retiro te puede ayudar a centrarte de nuevo, a reconectar con tu esencia y a abandonar patrones dañinos que se repiten. En grupos pequeños tienes la posibilidad de hospedarte en un lugar en la naturaleza entre las montañas. Durante esa estancia tendrás acceso a una alimentación consciente, practicaremos yoga, tendrás terapias chamánicas de sanación sin plantas y también tiempo libre para explorar los bellos alrededores.",
+          "Los retiros son la oportunidad perfecta para desconectar del estrés diario y reconectar contigo mismo. Un espacio seguro para sanar, crecer y transformarte rodeado de personas con tu misma vibración."
+        ],
+        "info": {
+          "duracion": "Entre 3 a 5 días",
+          "ubicacion": "El Santuario – Medellín, Colombia",
+          "grupo": "Máximo 6 personas",
+          "inversion": "Consultar precios y fechas al correo",
+          "correo": "yogamarte999@gmail.com"
+        }
+      }
+    ]
+  },
+  "Sobremi": {
+    "Header": {
+      "titulo": "Mi Historia de Transformación",
+      "frase": "De la crisis a la sanación, del miedo al propósito"
+    },
+
+    "timeline": {
+      "titulo": "Mi Camino de Sanación",
+      "items": [
+        {
+          "icono": "📚",
+          "titulo": "Los Inicios",
+          "parrafos": [
+            "Me formé como filóloga, psicóloga y coach holístico. Durante muchos años trabajé en la documentación técnica de una multinacional",
+            " y más tarde como coach para ayudar a las personas a encontrar el trabajo acorde a su potencial en una entidad estatal en Alemania."
+          ]
+        },
+        {
+          "icono": "💔",
+          "titulo": "La Crisis",
+          "parrafos": [
+            "Mi salud, o mejor dicho, mi falta de salud, solía manifestarse con",
+            "dolores de espalda cada vez más intensos. Mi trabajo de oficina no",
+            "me hacía feliz y mis relaciones intrapersonales me drenaban.",
+            "Enfermé y entré en un vértigo constante, lo que finalmente me",
+            "obligó a detenerme y reflexionar sobre lo que no estaba",
+            "funcionando en mi vida.",
+
+            "Durante ese tiempo de reflexión, el vértigo no me permitía valerme",
+            "por mí misma, perdí amigos y hasta mi propia familia me dejó sola",
+            "en el proceso."
+          ]
+        },
+        {
+          "icono": "💡",
+          "titulo": "El Despertar",
+          "parrafos": [
+            "Solo cuando mi cuerpo me mostró que no podía seguir así, admití lo",
+            " que ya sabía desde hacía tiempo: que ya era hora de seguir mi propósito.",
+            "Ya me había formado paralelamente como maestra de reiki, en",
+            "técnicas de física cuántica para transformar traumas y como",
+            " profesora de yoga. Sólo lo hacía para aprender a conocer mis",
+            "emociones y mi cuerpo primero, pero todavía no conectaba con mi esencia."
+          ]
+        },
+        {
+          "icono": "🦅",
+          "titulo": "El Encuentro con el Chamanismo",
+          "parrafos": [
+            "Por casualidad y en un momento de crisis de mi vida, tuve",
+            "un impulso tan fuerte que seguí mi corazón y me apunté",
+            "a una formación chamánica. Mi entonces mentor se había formado",
+            "en técnicas incas y canadienses.",
+            "Esto cambió mi mundo para siempre."
+          ]
+        },
+        {
+          "icono": "✨",
+          "titulo": "La Transformación",
+          "parrafos": [
+            "Durante esa formación aprendí muchísimo sobre mí misma, sobre el despertar espiritual, sobre el vínculo de las enfermedades con las emociones no trabajadas, sobre la sanación energética y sobre todas las dimensiones a las que un chamán puede viajar.",
+            "Y, lo más importante, me pude sanar a mí misma.",
+            "De esta manera, también sané mi propio dolor de espalda, el vértigo y mucho de mi pasado. Atraía relaciones más conscientes y enriquecedoras. Me sentí tan inspirada que quise trabajar con las altas energías de los arcángeles para servir a los demás. Porque es tan hermoso que es como pasar media hora en el cielo."
+          ]
+        },
+        {
+          "icono": "🌺",
+          "titulo": "El Nacimiento de YogÁmarte",
+          "parrafos": [
+            "Decidí crear un concepto que mezclara los dos métodos que a mí me devolvieron a la vida: el yoga y el chamanismo. Así creció YogÁmarte.",
+            "Una vez establecido, entendí que quería compartirlo en mi país de nacimiento, mi Colombia. Después de 35 años en Alemania lo dejé todo para poder ofrecerte con todo mi amor este servicio que te liberará y te dará armonía interna, como lo hizo conmigo."
+          ]
+        }
+      ]
+    },
+
+    "mensaje": {
+      "frase": "Si yo pude sanarme a mí misma después de tocar fondo, tú también puedes. No estás solo en este camino. Permíteme acompañarte en tu proceso de transformación, como otros me acompañaron a mí.",
+      "autor": "Paola Bergmann",
+      "cta_titulo": "¿Lista/o para tu transformación?",
+      "cta_texto": "Comencemos juntos este viaje hacia tu bienestar integral",
+      "cta_boton": "¡No dudes en llamarme!"
+    },
+
+    "formacion": {
+      "titulo": "Mi Formación en Alemania",
+      "items": [
+        {
+          "icono": "🎓",
+          "titulo": "Filología y Psicología",
+          "texto": "Formación académica en ciencias humanas"
+        },
+        {
+          "icono": "🧘🏽‍♀️",
+          "titulo": "Profesora de Yoga",
+          "texto": "Especializada en Vinyasa Flow y Yin Yoga"
+        },
+        {
+          "icono": "🙌",
+          "titulo": "Maestra de Reiki",
+          "texto": "Sanación energética y equilibrio vital"
+        },
+        {
+          "icono": "⚡",
+          "titulo": "Sanación Cuántica y Coaching",
+          "texto": "Técnicas para transformar bloqueos y acompañamiento 1:1"
+        },
+        {
+          "icono": "🦅",
+          "titulo": "Terapias chamánicas",
+          "texto": "Técnicas incas y canadienses"
+        },
+        {
+          "icono": "👼",
+          "titulo": "Terapia Angelical",
+          "texto": "Conexión con energías elevadas"
+        }
+      ]
+    },
+
+    "valores": {
+      "titulo": "Mis Valores",
+      "items": [
+        {
+          "icono": "💚",
+          "titulo": "Autenticidad",
+          "texto": "Creo en mostrarme tal como soy, con mis luces y sombras"
+        },
+        {
+          "icono": "🕊️",
+          "titulo": "Libertad",
+          "texto": "Acompaño cada proceso con amor y comprensión profunda, sé tu mismo/a"
+        },
+        {
+          "icono": "🔥",
+          "titulo": "Transformación",
+          "texto": "La sanación verdadera viene desde el interior"
+        },
+        {
+          "icono": "🌈",
+          "titulo": "Conexión",
+          "texto": "Todo está conectado: cuerpo, mente, espíritu y energía"
+        }
+      ]
+    }
+  },
+  "Testimonio": {
+    "header": {
+      "titulo": "Historias que Inspiran Confianza",
+      "subtitulo": "Experiencias reales de transformación y sanación"
+    },
+    "cards": [
+      {
+        "nombre": "Tanja",
+        "ubicacion": "Suiza",
+        "estrellas": "★★★★★",
+        "texto": "Paola es una persona muy sensible y con una gran capacidad de percepción. Logró liberar algunos de mis bloqueos, y después de las sesiones de sanación con ella, me siento más libre, más viva y más conectada con mi poder interior. Se nota que Paola tiene un interés genuino en ayudar a los demás. ¡La recomiendo sin duda!"
+      },
+      {
+        "nombre": "Renate",
+        "ubicacion": "Austria",
+        "estrellas": "★★★★★",
+        "texto": "Paola es una guía espiritual con mucha sensibilidad que te lleva a través de tus temas y bloqueos importantes y llega al meollo del asunto, haciéndotelo comprender fácilmente. Muestra caminos claros por los que podemos trabajar juntas para poder avanzar en el crecimiento. Sus recomendaciones han contribuido enormemente a mi desarrollo positivo. Sus terapias virtuales son mágicas y efectivas incluso en diferentes zonas horarias."
+      },
+      {
+        "nombre": "Esther",
+        "ubicacion": "Suiza",
+        "estrellas": "★★★★★",
+        "texto": "Reservé una sesión de sanación chamánica con Paola y enseguida me sentí muy cómoda y a gusto. Su forma profesional y empática de llevar la terapia me permitieron entrar rápida y profundamente en aquello que me bloqueaba. Finalmente, me propuso un ejercicio para profundizar y trabajar en mí misma. Toda la sesión fue una experiencia enriquecedora. ¡Muy recomendable!"
+      },
+      {
+        "nombre": "Martina",
+        "ubicacion": "Alemania",
+        "estrellas": "★★★★★",
+        "texto": "Querida Paola, Tuve el privilegio de disfrutar de una sesión de sanación chamánica contigo. Gracias a tu trabajo consciente y a tu conexión con el mundo espiritual, me sentí protegida de una forma maravillosa en todo momento. Inmediatamente después de la sesión, sentí mucha más ligereza y paz interior."
+      }
+    ]
+  },
+  "Contacto": {
+    "titulo": "Conecta Conmigo",
+    "formulario": {
+      "nombre": "Nombre",
+      "correo": "Correo Electrónico",
+      "telefono": "Teléfono (opcional)",
+      "mensaje": "Escribe tu mensaje aquí...",
+      "boton": "Enviar Mensaje",
+      "info": "Te responderemos en menos de 24 horas"
+    },
+    "informacion": {
+      "whatsapp": {
+        "texto": "Enviar WhatsApp"
+      }
+    }
+  },
+  "Reserva": {
+    "titulo": "Reserva Tu Clase",
+    "subtitulo": "Encuentra tu momento y bienestar",
+    "pasos": [
+      {
+        "paso": "Paso 1: Elige tu Tipo de Clase",
+        "clases": [
+          {
+            "nombre": "Sesión Individual",
+            "descripcion": "Atención personalizada 1:1",
+            "duracion": "60 min"
+          },
+          {
+            "nombre": "Sesión Grupal",
+            "descripcion": "Comparte la experiencia",
+            "duracion": "90 min"
+          },
+          {
+            "nombre": "Terapia Chamánica",
+            "descripcion": "Sanación profunda",
+            "duracion": "120 min"
+          },
+          {
+            "nombre": "Retiros Holísticos",
+            "descripcion": "Experiencia completa",
+            "duracion": "Día completo"
+          }
+        ]
+      },
+      {
+        "paso": "Paso 2: Selecciona Fecha y Hora",
+        "descripcion": "Selecciona un tipo de clase arriba para ver los horarios disponibles",
+        "sugerencia": "Primero selecciona el tipo de clase que deseas",
+        "mensaje_confirmacion": {
+          "titulo": "¡Reserva Confirmada!",
+          "texto": "Revisa tu correo electrónico para los detalles de tu clase"
+        }
+      }
+    ]
+  },
+  "Footer": {
+    "marca": {
+      "nombre": "YogaAmarte",
+      "copyright": "©2024 Yoga con Paola Bergmann. Todos los derechos reservados.",
+      "hecho_por": "Hecho por A2Digital"
+    },
+    "links_legales": {
+      "terminos": "Términos legales",
+      "privacidad": "Política de privacidad",
+      "cookies": "Cookies"
+    },
+    "redes_sociales": {
+      "titulo": "Síguenos en nuestras redes sociales"
+    }
+  }
+}
