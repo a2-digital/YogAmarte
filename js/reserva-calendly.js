@@ -139,6 +139,8 @@
       clearInterval(countdownTimer);
       countdownTimer = null;
     }
+
+    iniciarCountdown();
   };
 
   // ==================== ACTUALIZAR BOTONES DE IDIOMA ====================
