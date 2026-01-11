@@ -4,7 +4,8 @@
     "sobre_mi": "Sobre Mi",
     "testimonios": "Testimonios",
     "contacto": "Contacto",
-    "reservar": "Reservar Ahora"
+    "reservar": "Reservar Ahora",
+    "langlabel": "ES"
   },
   "Index": {
     "banner": {
@@ -91,12 +92,12 @@
         "titulo": "Retiros Holísticos",
         "imagen": "./images/Retiro.png",
         "descripcion": [
-          "¿Sientes que necesitas un respiro? ¿Que el estrés domina tu vida, estás siempre cansado o irascible? Un retiro te puede ayudar a centrarte de nuevo, a reconectar con tu esencia y a abandonar patrones dañinos que se repiten. En grupos pequeños tienes la posibilidad de hospedarte en un lugar en la naturaleza entre las montañas. Durante esa estancia tendrás acceso a una alimentación consciente, practicaremos yoga, tendrás terapias chamánicas de sanación sin plantas y también tiempo libre para explorar los bellos alrededores.",
+          "¿Sientes que necesitas un respiro? ¿Que el estrés domina tu vida, estás siempre cansado o irritable? Un retiro te puede ayudar a centrarte de nuevo, a reconectar con tu esencia y a abandonar patrones dañinos que se repiten. En grupos pequeños tienes la posibilidad de hospedarte en un lugar en la naturaleza entre las montañas. Durante esa estancia tendrás acceso a una alimentación consciente, practicaremos yoga, tendrás terapias chamánicas de sanación sin plantas y también tiempo libre para explorar los bellos alrededores.",
           "Los retiros son la oportunidad perfecta para desconectar del estrés diario y reconectar contigo mismo. Un espacio seguro para sanar, crecer y transformarte rodeado de personas con tu misma vibración."
         ],
         "info": {
           "duracion": "Entre 3 a 5 días",
-          "ubicacion": "El Santuario – Medellín, Colombia",
+          "ubicacion": "Ricaurte, Colombia",
           "grupo": "Máximo 6 personas",
           "inversion": "Consultar precios y fechas al correo",
           "correo": "yogamarte999@gmail.com"
@@ -130,12 +131,9 @@
             "me hacía feliz y mis relaciones intrapersonales me drenaban.",
             "Enfermé y entré en un vértigo constante, lo que finalmente me",
             "obligó a detenerme y reflexionar sobre lo que no estaba",
-            "funcionando en mi vida.",
-
-            "Durante ese tiempo de reflexión, el vértigo no me permitía valerme",
-            "por mí misma, perdí amigos y hasta mi propia familia me dejó sola",
-            "en el proceso."
-          ]
+            "funcionando en mi vida."
+          ],
+          "mensaje_final": "Durante ese tiempo de reflexión, el vértigo no me permitía valerme por mí misma, y muchas relaciones se terminaron en ese tiempo. Me sentía sola en el proceso."
         },
         {
           "icono": "💡",
@@ -156,18 +154,19 @@
             "Por casualidad y en un momento de crisis de mi vida, tuve",
             "un impulso tan fuerte que seguí mi corazón y me apunté",
             "a una formación chamánica. Mi entonces mentor se había formado",
-            "en técnicas incas y canadienses.",
-            "Esto cambió mi mundo para siempre."
-          ]
+            "en técnicas incas y canadienses."
+          ],
+          "mensaje_final": "Esto cambió mi mundo para siempre."
         },
         {
           "icono": "✨",
           "titulo": "La Transformación",
           "parrafos": [
-            "Durante esa formación aprendí muchísimo sobre mí misma, sobre el despertar espiritual, sobre el vínculo de las enfermedades con las emociones no trabajadas, sobre la sanación energética y sobre todas las dimensiones a las que un chamán puede viajar.",
+            "Durante esa formación aprendí mucho sobre el despertar de conciencia, el despertar espiritual, el vínculo de las enfermedades con las emociones no trabajadas, la sanación energética y todas las dimensiones a las que un chamán puede viajar.",
             "Y, lo más importante, me pude sanar a mí misma.",
             "De esta manera, también sané mi propio dolor de espalda, el vértigo y mucho de mi pasado. Atraía relaciones más conscientes y enriquecedoras. Me sentí tan inspirada que quise trabajar con las altas energías de los arcángeles para servir a los demás. Porque es tan hermoso que es como pasar media hora en el cielo."
-          ]
+          ],
+          "mensaje_final": "Y, lo más importante, me pude sanar a mí misma."
         },
         {
           "icono": "🌺",
@@ -238,14 +237,9 @@
           "texto": "Acompaño cada proceso con amor y comprensión profunda, sé tu mismo/a"
         },
         {
-          "icono": "🔥",
-          "titulo": "Transformación",
-          "texto": "La sanación verdadera viene desde el interior"
-        },
-        {
           "icono": "🌈",
           "titulo": "Conexión",
-          "texto": "Todo está conectado: cuerpo, mente, espíritu y energía"
+          "texto": "Todo está conectado: cuerpo, mente y alma."
         }
       ]
     }
@@ -303,11 +297,16 @@
     "subtitulo": "Encuentra tu momento y bienestar",
     "pasos": [
       {
-        "paso": "Paso 1: Elige tu Tipo de Clase",
+        "paso": "Paso 1: Elige tu sesion",
         "clases": [
           {
             "nombre": "Sesión Individual",
             "descripcion": "Atención personalizada 1:1",
+            "duracion": "60 min"
+          },
+          {
+            "nombre": "Terapia Holística",
+            "descripcion": "Sanación profunda",
             "duracion": "60 min"
           },
           {
@@ -316,12 +315,7 @@
             "duracion": "90 min"
           },
           {
-            "nombre": "Terapia Chamánica",
-            "descripcion": "Sanación profunda",
-            "duracion": "120 min"
-          },
-          {
-            "nombre": "Retiros Holísticos",
+            "nombre": "Retiros ",
             "descripcion": "Experiencia completa",
             "duracion": "Día completo"
           }
@@ -329,25 +323,37 @@
       },
       {
         "paso": "Paso 2: Selecciona Fecha y Hora",
-        "descripcion": "Selecciona un tipo de clase arriba para ver los horarios disponibles",
-        "sugerencia": "Primero selecciona el tipo de clase que deseas",
+        "descripcion": "Selecciona una sesión arriba para ver los horarios disponibles",
+        "sugerencia": "Primero selecciona la sesión que deseas",
         "mensaje_confirmacion": {
           "titulo": "¡Reserva Confirmada!",
-          "texto": "Revisa tu correo electrónico para los detalles de tu clase"
+          "texto": "Revisa tu correo electrónico para los detalles de tu sesión"
         }
       }
-    ]
+    ],
+    "mensaje_especial": {
+      "titulo": "Información Importante",
+      "texto1": "La realización de esta clase está sujeta a un <strong>cupo mínimo de participantes</strong>.",
+      "texto2": "Esta experiencia es <strong>exclusiva</strong> y tiene <strong>fechas definidas</strong>. ¡Reserva tu lugar antes de que se agoten!",
+      "contacto": "No dudes en llamarme:",
+      "boton": "Contactar por WhatsApp",
+      "whatsapp_mensaje": "Hola! Estoy interesado/a en {tipoClase}. Me gustaría conocer las fechas disponibles y más información."
+    },
+    "ModalAviso": {
+      "titulo": "Información Importante",
+      "texto": "La idea en esta sección es <strong>conocernos en una llamada gratuita</strong> para saber si mis terapias te pueden ayudar. En esta sesión miraremos juntos lo que más te conviene y te informaré sobre el <strong>costo de las siguientes sesiones</strong>.",
+      "contador": "Se cerrará en",
+      "boton": "¡Entendido!"
+    }
   },
   "Footer": {
     "marca": {
-      "nombre": "YogaAmarte",
+      "nombre": "YogaAmarte - Munay",
       "copyright": "©2024 Yoga con Paola Bergmann. Todos los derechos reservados.",
       "hecho_por": "Hecho por A2Digital"
     },
     "links_legales": {
-      "terminos": "Términos legales",
-      "privacidad": "Política de privacidad",
-      "cookies": "Cookies"
+      "terminos": "Aviso legal"
     },
     "redes_sociales": {
       "titulo": "Síguenos en nuestras redes sociales"

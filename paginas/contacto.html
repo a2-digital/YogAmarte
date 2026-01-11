@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
+    <link rel="stylesheet" href="../css/copy.css" />
     <title>Contacto - YogAmarte</title>
   </head>
   <body data-page="contacto">
@@ -80,7 +81,14 @@
             <div class="contacto-info">
               <div class="info-item">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:+573001234567">012-457800 8670</a>
+                <a>+0057 311 5750453</a>
+                <button
+                  class="copy-btn copy-btn-inline"
+                  onclick="copiarAlPortapapeles('+573115750453', 'whatsapp')"
+                  title="Copiar número"
+                >
+                  <i class="fas fa-copy"></i>
+                </button>
               </div>
 
               <div class="info-item">
@@ -88,12 +96,19 @@
                 <a href="mailto:yogamarte999@gmail.com"
                   >yogamarte999@gmail.com</a
                 >
+                <button
+                  class="copy-btn"
+                  onclick="copiarAlPortapapeles('yogamarte999@gmail.com', 'email')"
+                  title="Copiar email"
+                >
+                  <i class="fas fa-copy"></i>
+                </button>
               </div>
 
               <div class="info-item">
                 <i class="fab fa-whatsapp"></i>
                 <a
-                  href="https://wa.me/573001234567?text=Hola%20Paola,%20me%20interesa%20información%20sobre%20tus%20servicios"
+                  href="https://wa.me/00573115750453?text=Hola%20Paola,%20me%20interesa%20información%20sobre%20tus%20servicios"
                   target="_blank"
                 >
                   Enviar WhatsApp
@@ -102,7 +117,7 @@
 
               <div class="social-icons">
                 <a
-                  href="https://wa.me/573001234567"
+                  href="https://wa.me/00573115750453"
                   target="_blank"
                   rel="noopener"
                   aria-label="WhatsApp"
@@ -111,7 +126,7 @@
                   <i class="fab fa-whatsapp"></i>
                 </a>
                 <a
-                  href="https://instagram.com/yogamarte"
+                  href="https://instagram.com/yogamarte.e"
                   target="_blank"
                   rel="noopener"
                   aria-label="Instagram"
@@ -154,5 +169,6 @@
     <!-- Tu script con EmailJS -->
     <script src="../js/funciones.js"></script>
     <script src="../js/contacto.js"></script>
+    <script src="../js/copy-clipboard.js"></script>
   </body>
 </html>

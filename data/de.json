@@ -2,39 +2,40 @@
   "Nav": {
     "inicio": "Home",
     "sobre_mi": "Über Mich",
-    "testimonios": "Kundenstimmen",
+    "testimonios": "Feedback",
     "contacto": "Kontakt",
-    "reservar": "Jetzt Buchen"
+    "reservar": "Jetzt Buchen",
+    "langlabel": "DE"
   },
   "Index": {
     "banner": {
       "titulo": "FINDE DEINE INNERE HARMONIE",
-      "subtitulo": "Spirituelle Therapien und Yoga"
+      "subtitulo": "Ganzheitliche Therapien und Yoga"
     },
     "servicios": {
-      "titulo": "DIENSTLEISTUNGEN",
-      "subtitulo": "Klicke auf die einzelnen Kurse, um mehr zu erfahren.",
+      "titulo": "Mein Angebot",
+      "subtitulo": "Klicke auf die einzelnen Angebote, um mehr zu erfahren.",
       "items": [
         {
           "id": "servicio1",
           "icono": "🧘‍♀️",
           "titulo": "Mein Yoga-Konzept mit Einzel- und Gruppensitzungen",
           "descripcion": "Wir praktizieren Vinyasa Flow und Yin Yoga mit ganzheitlichen Werkzeugen, die es dir ermöglichen, dich mit dir selbst zu verbinden. Mit den vier Elementen und den Elementargeistern erreichst du die tiefste Essenz deines Seins, damit du dich selbst so lieben kannst, wie du bist.",
-          "textoBoton": "✦ Klicken Sie hier, um mehr zu sehen ✦"
+          "textoBoton": "✦ Klick hier, um mehr zu sehen ✦"
         },
         {
           "id": "servicio2",
           "icono": "🍀",
-          "titulo": "Ganzheitliche Therapien (schamanische Therapien und Engeltherapien)",
+          "titulo": "Ganzheitliche Therapien (schamanische- und Engeltherapien)",
           "descripcion": "Wirksame Heilsitzungen mit therapeutischem Ansatz, bei denen energetische Blockaden, spezifische Beschwerden und vergangene Traumata gelöst werden, damit dein Körper wieder ins Gleichgewicht kommt.",
-          "textoBoton": "✦ Klicken Sie hier, um mehr zu sehen ✦"
+          "textoBoton": "✦ Klick hier, um mehr zu sehen ✦"
         },
         {
           "id": "servicio3",
           "icono": "🌄",
-          "titulo": "Ganzheitliche Retreats",
-          "descripcion": "Entfliehe dem Stress, gönn dir etwas Gutes und verbring Zeit in der Natur, um wieder zu dir selbst und deinem Körper zu finden. Ich verspreche dir, du wirst dich danach wie neugeboren fühlen.",
-          "textoBoton": "✦ Klicken Sie hier, um mehr zu sehen ✦"
+          "titulo": "Retreats",
+          "descripcion": "Entspanne dich vom Stress, gönne dir eine Auszeit in der Natur, um dich wieder mit dir selbst und deinem Körper zu verbinden. Ich verspreche dir, du wirst dich danach wie neugeboren fühlen.",
+          "textoBoton": "✦ Klick hier, um mehr zu sehen ✦"
         }
       ]
     },
@@ -44,12 +45,12 @@
         {
           "icono": "🌲",
           "titulo": "Du siehst den Wald vor lauter Bäumen nicht:",
-          "texto": "Um im Außen zu heilen, ist es notwendig, nach innen zu gehen. Ich helfe dir, dich mit deinen emotionalen Blockaden zu verbinden und begleite dich im Prozess ihrer Heilung, damit du dich frei fühlen und authentisch zeigen kannst – so wie du wirklich bist."
+          "texto": "Erst wenn du nach Innen gehst, kannst du heilen. Ich helfe dir, dich mit deinen emotionalen Blockaden zu verbinden und begleite dich im Heilungsprozess, damit du dich frei fühlen und authentisch zeigen kannst - So wie du wirklich bist. "
         },
         {
           "icono": "🫶",
           "titulo": "YogÁmarte:",
-          "texto": "Lerne, dich selbst zu lieben – durch Yoga und in Kombination mit ganzheitlichen und schamanischen Werkzeugen, die das Beste in dir zum Vorschein bringen."
+          "texto": "Lerne dich selbst zu lieben. Durch Yoga und in Kombination mit ganzheitlichen und schamanischen Methoden kannst du das Beste in dir zum Vorschein bringen."
         }
       ]
     },
@@ -63,25 +64,25 @@
           "Durch Asanas und geführte Meditationen, bewusstes Atmen und Mantras sowie ätherische Öle, die dir helfen, Blockaden zu lösen und dein volles Potenzial zu entfalten, wirst du eine tiefe Verbindung zu dir selbst finden. Wir können die Kurse individuell auf deine Bedürfnisse und Wünsche abstimmen. Die Kurse können einzeln oder in kleinen Gruppen stattfinden, sodass wir dir eine persönliche Betreuung bieten können, die dein Lerntempo und deine individuellen Anforderungen berücksichtigt."
         ],
         "info": {
-          "duracion": "60-90 Minuten",
-          "modalidad": "Virtuell (fragen Sie nach, wenn Sie eine Präsenzveranstaltung wünschen)",
+          "duracion": "60 Minuten",
+          "modalidad": " Virtuell (Präsenzunterricht auf Anfrage möglich)",
           "inversion": "Preise und Termine bitte per E-Mail anfragen",
           "correo": "yogamarte999@gmail.com"
         }
       },
       {
         "id": "modal2",
-        "titulo": "Ganzheitliche Therapie",
+        "titulo": "Ganzheitliche Therapien",
         "imagen": "./images/Terapia_Chamánica.png",
         "descripcion": [
           "**Schamanische Therapie**",
-          "Schamanische Therapie In einer schamanischen Heilsitzung unterstütze ich dich dabei, Energieblockaden und Traumata zu lösen. Du lässt alles los, was sich am Weiterkommen hindert. Ob du dir bessere Gesundheit, erfüllendere Beziehungen oder beruflichen Erfolg wünscht – alles, was du in deinem Leben manifestiert, hat einen energetischen Ursprung. Nach der Sitzung fließen deine Energien wieder frei, sodass du das Leben erschaffen kannst, das du dir wünscht. Eine Heilsitzung ist eine transformative Reise zurück zu dir selbst, zu jenem Teil, der noch mit der Quelle verbunden ist.",
-          "**Engelstherapie Therapie**",
+          "Schamanische Therapie In einer schamanischen Heilsitzung ohne Pflanzen oder Kräuter unterstütze ich dich dabei, Energieblockaden und Traumata zu lösen. Du lässt alles los, was sich am Weiterkommen hindert. Ob du dir bessere Gesundheit, erfüllendere Beziehungen oder beruflichen Erfolg wünscht – alles, was du in deinem Leben manifestiert, hat einen energetischen Ursprung. Nach der Sitzung fließen deine Energien wieder frei, sodass du das Leben erschaffen kannst, das du dir wünscht. Eine Heilsitzung ist eine transformative Reise zurück zu dir selbst, zu jenem Teil, der noch mit der Quelle verbunden ist. Oft sind mehrere Sitzungen notwendig.",
+          "**Engelstherapie**",
           "Während einer Engelsheilungssitzung arbeite ich mit den hohen Energien der Erzengel, um spezifische Krankheiten und körperliche Symptome zu behandeln. Es handelt sich um eine außergewöhnliche und wirksame Methode zur Behandlung körperlicher Beschwerden. Die Eigenschaften der verschiedenen Erzengel repräsentieren die unterschiedlichen Elemente, aus denen unser Körper besteht. Während der Sitzung erhält der Körper einen intensiven Impuls, um ihn in seinen ursprünglichen Heilungszustand zurückzuführen und seine Selbstheilungskräfte zu aktivieren. So können beispielsweise Organe stimuliert, das Zellwachstum gefördert oder der Kreislauf ausgeglichen werden. "
         ],
         "info": {
           "duracion": "60 Minuten",
-          "modalidad": "Virtuell (fragen Sie nach, wenn Sie eine Präsenzveranstaltung wünschen)",
+          "modalidad": "Online (frag nach, falls du dir Präsenz-Sitzungen wünscht)",
           "inversion": "Preise und Termine bitte per E-Mail anfragen",
           "correo": "yogamarte999@gmail.com"
         }
@@ -92,13 +93,13 @@
         "imagen": "./images/Retiro.png",
         "descripcion": [
           "Brauchst du eine Auszeit? Beherrscht Stress dein Leben? Bist du ständig müde oder gereizt? Eine Auszeit kann dir helfen, dich neu zu fokussieren, wieder mit dir selbst in Kontakt zu treten und schädliche, wiederkehrende Muster zu durchbrechen.",
-          "In kleinen Gruppen hast du die Möglichkeit, inmitten der Natur in den Bergen zu übernachten.",
-          "Während deines Aufenthalts hast du Zugang zu achtsamer Ernährung, kannst Yoga praktizieren, schamanische Heilbehandlungen (OHNE PFLANZEN) erleben und die wunderschöne Umgebung in deiner Freizeit erkunden.",
-          "Retreats sind die perfekte Gelegenheit, dem Alltagsstress zu entfliehen und wieder zu dir selbst zu finden. Ein geschützter Raum zum Heilen, Wachsen und Transformieren, umgeben von Menschen mit derselben Frequenz."
+          "In kleinen Gruppen hast du die Möglichkeit, inmitten der Natur zu übernachten.",
+          "Während deines Aufenthalts hast du Zugang zu achtsamer Ernährung, kannst Yoga praktizieren, schamanische Heilbehandlungen (OHNE HEILPFLANZEN ODER -KRÄUTER) erleben und die wunderschöne Umgebung in deiner Freizeit erkunden.",
+          "Retreats sind die perfekte Gelegenheit, dem Alltagsstress zu entfliehen und wieder zu dir selbst zu finden. Ein geschützter Raum zum Heilen, Wachsen und Transformieren, umgebend von Menschen mit derselben Frequenz."
         ],
         "info": {
           "duracion": "Zwischen 3 bis 5 Tagen",
-          "ubicacion": "El Santuario – Medellín, Kolumbien",
+          "ubicacion": "Ricaurte - Kolumbien",
           "grupo": "Maximal 6 Personen",
           "inversion": "Preise und Termine bitte per E-Mail anfragen",
           "correo": "yogamarte999@gmail.com"
@@ -109,7 +110,7 @@
   "Sobremi": {
     "Header": {
       "titulo": "Meine Transformationsgeschichte",
-      "frase": "Von der Krise zur Heilung, von der Angst zum Lebenszweck"
+      "frase": "Von der Krise zur Heilung, von der Angst zur Vision"
     },
     "timeline": {
       "titulo": "Mein Heilungsweg",
@@ -118,62 +119,59 @@
           "icono": "📚",
           "titulo": "Die Anfänge",
           "parrafos": [
-            "Ich bin ausgebildete Philologin, Psychologin und ganzheitliche Coach. Viele Jahre arbeitete ich in der technischen Dokumentation eines multinationalen Unternehmens",
-            " und später als Coach, um Menschen dabei zu helfen, die Arbeit zu finden, die ihrem Potenzial entspricht, in einer staatlichen Einrichtung in Deutschland."
+            "Ich habe Philologie, Psychologie studiert und mich als Coach ausgebildet. Ich habe mehrere Jahre in der technischen Dokumentation eines multinationalen Unternehmens",
+            " und später als Coach in einer staatlichen Einrichtung in Deutschland gearbeitet, um Menschen dabei zu helfen, die Arbeit zu finden, die ihrem Potenzial entspricht."
           ]
         },
         {
           "icono": "💔",
           "titulo": "Die Krise",
           "parrafos": [
-            "Meine Gesundheit, oder besser gesagt mein Mangel an Gesundheit, manifestierte sich mit",
-            "immer stärkeren Rückenschmerzen. Meine Büroarbeit machte mich nicht glücklich",
-            "und meine zwischenmenschlichen Beziehungen zehrten an mir.",
-            "Ich wurde krank und bekam anhaltenden Schwindel, was mich schließlich",
-            "zwang, innezuhalten und darüber nachzudenken, was in meinem Leben nicht",
-            "funktionierte.",
-            "Während dieser Zeit der Reflexion erlaubte mir der Schwindel nicht, für mich selbst zu sorgen,",
-            "ich verlor Freunde und sogar meine eigene Familie ließ mich in diesem Prozess allein."
-          ]
+            "Meine Gesundheit, oder besser gesagt, mein Mangel an Gesundheit, manifestierte sich mit",
+            "immer stärkeren Rückenschmerzen. Meine Büroarbeit machte mich unglücklich",
+            "und meine zwischenmenschlichen Beziehungen laugten mich aus.",
+            " Ich bin krank geworden und habe jahrelang Schwindel bekommen. Das brachte mich dazu",
+            ", innezuhalten, um zu schauen, was mit meinem Leben nicht stimmte."
+          ],
+          "mensaje_final": "In dieser Zeit konnte ich durch den Schwindel mein Leben nicht mehr selbständig führen und fast all meine Beziehungen sind kaputt gegangen. Ich fühlte mich allein."
         },
         {
           "icono": "💡",
           "titulo": "Das Erwachen",
           "parrafos": [
-            "Erst als mein Körper mir zeigte, dass ich so nicht weitermachen konnte, gab ich zu,",
-            " was ich schon lange wusste: dass es an der Zeit war, meinem Lebenszweck zu folgen.",
-            "Ich hatte mich bereits parallel als Reiki-Meisterin ausbilden lassen, in",
-            "quantenphysikalischen Techniken zur Transformation von Traumata und als",
-            " Yogalehrerin. Ich tat es nur, um zuerst meine Emotionen und meinen Körper kennenzulernen,",
-            "aber ich war noch nicht mit meiner Essenz verbunden."
+            "Erst als mein Körper mir zeigte, dass es so nicht weitergehen konnte, musste ich zugeben, dass es die Zeit war, meiner Vision nachzugehen. ",
+            "Ich hatte mich parallel als Reikimeisterin, in Quantenheilung (Theki) und als Yogelehrerin ausgebildet. ",
+            "Dadurch hatte ich angefangen, bei mir schwere Emotionen zu transformieren,  ",
+            "meinen Körper zu verstehen und zu entgiften, aber ich hatte weder mich mit meinem wahrsten Inneren verbunden noch auf meine Seele gehört."
           ]
         },
         {
           "icono": "🦅",
-          "titulo": "Die Begegnung mit dem Schamanismus",
+          "titulo": "Der schamanische Weg",
           "parrafos": [
-            "Durch Zufall und in einem Krisenmoment meines Lebens hatte ich",
-            "einen so starken Impuls, dass ich meinem Herzen folgte und mich",
-            "für eine schamanische Ausbildung anmeldete. Mein damaliger Mentor hatte sich",
-            "in inkaischen und kanadischen Techniken ausbilden lassen.",
-            "Dies veränderte meine Welt für immer."
-          ]
+            "Durch eine Synchronizität und bei einem Lebenskrise, hatte ich den starken Impuls, eine schamanische ",
+            "Ausbildung zu absolvieren. Mein Mentor hatte sich in Kolumbien, Peru und Kanada ausgebildet (Incas-,Schwarzfusstradition) "
+          ],
+          "mensaje_final": "Dies veränderte meine Welt für immer."
         },
         {
           "icono": "✨",
           "titulo": "Die Transformation",
           "parrafos": [
-            "Während dieser Ausbildung lernte ich so viel über mich selbst, über spirituelles Erwachen, über die Verbindung von Krankheiten mit unbearbeiteten Emotionen, über energetische Heilung und über all die Dimensionen, in die ein Schamane reisen kann.",
-            "Und das Wichtigste: Ich konnte mich selbst heilen.",
-            "Auf diese Weise heilte ich auch meine eigenen Rückenschmerzen, den Schwindel und vieles aus meiner Vergangenheit. Ich zog bewusstere und bereichernde Beziehungen an. Ich fühlte mich so inspiriert, dass ich mit den hohen Energien der Erzengel arbeiten wollte, um anderen zu dienen. Denn es ist so schön, dass es ist, als würde man eine halbe Stunde im Himmel verbringen."
-          ]
+            "In dieser Ausbildung habe ich viel über mich gelernt, über Bewusstseinswerdung, über die Verbindung zwischen Krankheiten und nicht verarbeiteten Emotionen",
+            "über tiefe Energiarbeit und dass ein Schamane die Brücke zwischen Dimensionen ist",
+            "Nur so konnte ich meine Rückenschmerzen, meinen Schwindel und viel von meiner Vergangenheit heilen. Ich habe bewusste und bereichernde Beziehungen angezogen. ",
+            "Es hat mich so dermaßen inspiriert, dass ich selber mit den Engelenergien der Menschheit dienen wollte. ",
+            "Weil es so schön ist, dass es sich so anfühlt, als wäre man im Himmel."
+          ],
+          "mensaje_final": " Und am Wichtigsten, ich konnte mich selbst heilen!"
         },
         {
           "icono": "🌺",
-          "titulo": "Die Geburt von YogÁmarte",
+          "titulo": "Wie YogAmarte entstanden ist",
           "parrafos": [
-            "Ich beschloss, ein Konzept zu schaffen, das die beiden Methoden vereint, die mir mein Leben zurückgaben: Yoga und Schamanismus. So entstand YogÁmarte.",
-            "Einmal etabliert, verstand ich, dass ich es in meinem Geburtsland, meinem Kolumbien, teilen wollte. Nach 35 Jahren in Deutschland ließ ich alles zurück, um dir mit all meiner Liebe diesen Dienst anzubieten, der dich befreien und dir innere Harmonie geben wird, wie er es bei mir tat."
+            "Ich habe ein Konzept entwickelt, das beide Methoden beinhaltet, die mir ein glückliches Leben schenkten: Yoga und schamanische Therapien. Als es soweit war, wollte ich es von meiner Heimat aus,nämlich Kolumbien, in die Welt bringen.",
+            "Nach 33 Jahren Deutschland habe ich alles hinter mir gelassen, um dir dieses wunderschöne Werkzeug aus Kolumbien anbieten zu können. Du wirst dich von altem Ballast befreien und ein harmonisches Leben führen können, SO WIE ICH DAS KONNTE."
           ]
         }
       ]
@@ -234,14 +232,9 @@
           "texto": "Ich begleite jeden Prozess mit Liebe und tiefem Verständnis, sei du selbst"
         },
         {
-          "icono": "🔥",
-          "titulo": "Transformation",
-          "texto": "Wahre Heilung kommt von innen"
-        },
-        {
           "icono": "🌈",
           "titulo": "Verbindung",
-          "texto": "Alles ist verbunden: Körper, Geist, Seele und Energie"
+          "texto": "Alles ist verbunden: Körper, Geist, Seele."
         }
       ]
     }
@@ -281,6 +274,12 @@
         "ubicacion": "Deutschland",
         "estrellas": "★★★★★",
         "texto": "Durch Paolas einfühlsame Art fühlte ich mich sofort richtig gut aufgehoben bei ihr,ihre schamanischen Heilsitzungen haben sehr viel zu meiner Heilung beigetragen! Vielen Dank liebe Paola Brigitte"
+      },
+      {
+        "nombre": "Ursula",
+        "ubicacion": "Schweiz",
+        "estrellas": "★★★★★",
+        "texto": "Paola besitzt die besondere Fähigkeit, tiefere Ebenen und verborgene Zusammenhänge zum Thema des Klienten wahrzunehmen. Während einer Behandlung erkannte sie bei mir mögliche Erreger. Dies wurde später auch ärztlich als bakterielle Infektion bestätigt. Ich schätze ihre positive sensitive Präsenz, tiefgreifende Heilarbeit und ihr umfangreiches Wissen aus verschiedenen Heilwendungen."
       }
     ]
   },
@@ -305,11 +304,16 @@
     "subtitulo": "Finde deine Zeit und dein Wohlbefinden",
     "pasos": [
       {
-        "paso": "Schritt 1: Wähle deinen Kurstyp",
+        "paso": "Schritt 1: Wähle eine Option",
         "clases": [
           {
             "nombre": "Einzelsitzung",
             "descripcion": "Persönliche Betreuung 1:1",
+            "duracion": "60 Min."
+          },
+          {
+            "nombre": "Schamanische Therapie",
+            "descripcion": "Tiefe Heilung",
             "duracion": "60 Min."
           },
           {
@@ -318,41 +322,48 @@
             "duracion": "90 Min."
           },
           {
-            "nombre": "Schamanische Therapie",
-            "descripcion": "Tiefe Heilung",
-            "duracion": "120 Min."
-          },
-          {
-            "nombre": "Ganzheitliche Retreats",
-            "descripcion": "Vollständige Erfahrung",
+            "nombre": "Retreats",
+            "descripcion": "Ganzheitliches Erlebnis",
             "duracion": "Ganzer Tag"
           }
         ]
       },
       {
         "paso": "Schritt 2: Wähle Datum und Uhrzeit",
-        "descripcion": "Wähle oben einen Kurstyp aus, um die verfügbaren Zeiten zu sehen",
-        "sugerencia": "Wähle zuerst den gewünschten Kurstyp aus",
+        "descripcion": "Wähle oben eine Option aus, um die verfügbaren Zeiten zu sehen",
+        "sugerencia": "Wähle zuerst die gewünschte Option aus",
         "mensaje_confirmacion": {
           "titulo": "Buchung bestätigt!",
-          "texto": "Überprüfe deine E-Mail für die Details deines Kurses"
+          "texto": "Überprüfe deine E-Mail für die Details deiner gewählten Option"
         }
       }
-    ]
+    ],
+    "mensaje_especial": {
+      "titulo": "Wichtige Information",
+      "texto1": "Für diesen Kurs ist eine <strong> Mindestteilnehmerzahl erforderlich </strong>.",
+      "texto2": "Das findet zu festgelegten Terminen statt. Bitte kontaktiere mich über Mail/Whatsapp, um mehr Informationen zu bekommen.",
+      "contacto": "Zögern Sie nicht, mich anzurufen:",
+      "boton": "Per WhatsApp kontaktieren",
+      "whatsapp_mensaje": "Hallo! Ich interessiere mich für {tipoClase}. Ich würde gerne die verfügbaren Termine und weitere Informationen erfahren."
+    },
+    "ModalAviso": {
+      "titulo": "Wichtige Information",
+      "texto": "Hier geht es darum, dass wir uns in einem kostenlosen Vorgespräch kennenlernen, um herauszufinden, ob meine Therapien dir helfen können. In diesem Gespräch besprechen wir gemeinsam, was für dich am besten geeignet ist, und ich informiere dich über die Kosten der Folgesitzungen.",
+      "contador": "Schließt in",
+      "boton": "Verstanden!"
+    }
   },
   "Footer": {
     "marca": {
-      "nombre": "YogaAmarte",
+      "nombre": "YogaAmarte-Munay",
       "copyright": "©2024 Yoga mit Paola Bergmann. Alle Rechte vorbehalten.",
       "hecho_por": "Erstellt von A2Digital"
     },
     "links_legales": {
-      "terminos": "Rechtliche Bedingungen",
-      "privacidad": "Datenschutzrichtlinie",
-      "cookies": "Cookies"
+      "terminos": "Rechtlicher Hinweis"
     },
     "redes_sociales": {
-      "titulo": "Folge uns in unseren sozialen Netzwerken"
+      "titulo": "Folge mir in meinen sozialen Netzwerken"
     }
   }
 }

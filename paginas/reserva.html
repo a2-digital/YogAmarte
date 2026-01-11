@@ -22,6 +22,58 @@
     <title>Reserva tu Sesión - YogAmarte</title>
   </head>
   <body data-page="reserva">
+    <div id="modalAvisoReserva" class="modal-aviso-overlay">
+      <div class="modal-aviso-content">
+        <!-- ✅ NUEVO: Selector de idioma dentro del modal -->
+        <div class="modal-language-selector">
+          <button
+            class="modal-lang-btn active"
+            data-lang="es"
+            onclick="cambiarIdiomaModal('es')"
+          >
+            <img src="https://flagcdn.com/w20/es.png" alt="Español" />
+            ES
+          </button>
+          <button
+            class="modal-lang-btn"
+            data-lang="de"
+            onclick="cambiarIdiomaModal('de')"
+          >
+            <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" />
+            DE
+          </button>
+        </div>
+
+        <!-- Botón cerrar -->
+        <button class="modal-close-btn" onclick="cerrarModalAviso()">×</button>
+
+        <!-- Icono -->
+        <div class="modal-icono">💡</div>
+
+        <!-- Título -->
+        <h2 class="modal-titulo" id="modalTitulo">Información Importante</h2>
+
+        <!-- Texto informativo -->
+        <p class="modal-texto" id="modalTexto">
+          La idea en esta sección es
+          <strong>conocernos en una llamada gratuita</strong> para saber si mis
+          terapias te pueden ayudar. En esta sesión miraremos juntos lo que más
+          te conviene y te informaré sobre el
+          <strong>costo de las siguientes sesiones</strong>.
+        </p>
+
+        <!-- Contador y botón -->
+        <div class="modal-acciones">
+          <div class="modal-contador" id="modalContador">
+            Se cerrará en <span id="countdown">7</span>s
+          </div>
+          <button class="modal-btn-entendido" onclick="cerrarModalAviso()">
+            ¡Entendido!
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Navbar -->
     <div id="navbar-placeholder"></div>
 
@@ -33,15 +85,25 @@
 
         <div class="reserva-content">
           <!-- PASO 1: TIPOS DE CLASE -->
-          <h4 class="reserva-pasos">Paso 1: Elige tu Tipo de Clase</h4>
+          <h4 class="reserva-pasos">Paso 1: Elige tu sercio preferido</h4>
           <div class="class-types">
             <div
               class="class-type-card"
-              data-calendly-url="https://calendly.com/andriuandres6/sesion-individual"
+              data-calendly-url="https://calendly.com/yogamarte999/30min"
             >
               <div class="icon">🧘‍♀️</div>
               <h3>Sesión Individual</h3>
               <p>Atención personalizada 1:1</p>
+              <span class="duration">60 min</span>
+            </div>
+
+            <div
+              class="class-type-card"
+              data-calendly-url="https://calendly.com/yogamarte999/30min"
+            >
+              <div class="icon">🌿</div>
+              <h3>Terapia Chamánica</h3>
+              <p>Sanación profunda</p>
               <span class="duration">60 min</span>
             </div>
 
@@ -53,16 +115,6 @@
               <h3>Sesión Grupal</h3>
               <p>Comparte la experiencia</p>
               <span class="duration">90 min</span>
-            </div>
-
-            <div
-              class="class-type-card"
-              data-calendly-url="https://calendly.com/andriuandres6/terapia-chamanica"
-            >
-              <div class="icon">🌿</div>
-              <h3>Terapia Chamánica</h3>
-              <p>Sanación profunda</p>
-              <span class="duration">120 min</span>
             </div>
 
             <div
@@ -123,5 +175,7 @@
       async
     ></script>
     <script src="../js/reserva-calendly.js"></script>
+    <script src="../js/modal-aviso.js"></script>
+    <script src="../js/copy-clipboard.js"></script>
   </body>
 </html>

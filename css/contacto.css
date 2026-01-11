@@ -1,30 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* ==================== VARIABLES ==================== */
-:root {
-  --color-primary-gold: #f4d188;
-  --color-secondary-gold: #bf8d50;
-  --color-white: #ffffff;
-  --color-text-light: #f0f0f0;
-  --color-text-gray: #e0e0e0;
-
-  --bg-dark-green: #1f4c52;
-  --bg-light-cream: #f5f5e8;
-
-  --spacing-xs: 10px;
-  --spacing-sm: 15px;
-  --spacing-md: 20px;
-  --spacing-lg: 30px;
-  --spacing-xl: 40px;
-  --spacing-2xl: 60px;
-
-  --radius-sm: 10px;
-  --radius-md: 15px;
-  --radius-lg: 20px;
-  --radius-full: 50%;
-
-  --transition-fast: 0.3s ease;
-}
+@import url("variables.css");
 
 /* ==================== SECCIÓN CONTACTO ==================== */
 .contacto-section {

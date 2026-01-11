@@ -109,9 +109,22 @@
   box-shadow: 0 5px 15px rgba(139, 111, 158, 0.4);
 }
 
-/* ========== SWITCH DE IDIOMA CIRCULAR ========== */
+/* ========== SWITCH DE IDIOMA CON TEXTO AL LADO ========== */
 .language-switch {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Texto del idioma */
+.lang-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary-gold);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  min-width: 25px;
+  text-align: center;
 }
 
 .lang-toggle {
@@ -251,6 +264,10 @@
     font-size: 14px;
     padding: 8px 16px;
   }
+
+  .lang-label {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -262,5 +279,9 @@
   .btn-reservar {
     font-size: 13px;
     padding: 6px 12px;
+  }
+
+  .language-switch {
+    gap: 6px;
   }
 }

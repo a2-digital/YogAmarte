@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="..//css/copy.css" />
   </head>
   <body>
     <!-- ==================== FOOTER ==================== -->
@@ -28,7 +29,7 @@
 
           <div class="footer-madeby">
             <img src="../images/A2_Digital.png" alt="Logo A2Digital" />
-            <p class="footer-hecho-por">Hecho por <strong>A2Digital</strong></p>
+            <p class="footer-hecho-por"><strong>A2Digital</strong></p>
           </div>
         </div>
 
@@ -39,11 +40,9 @@
           </p>
 
           <div class="footer-links">
-            <a href="#legal" class="footer-link">Términos legales</a>
-            <span class="separator">•</span>
-            <a href="#privacy" class="footer-link">Política de privacidad</a>
-            <span class="separator">•</span>
-            <a href="#cookies" class="footer-link">Cookies</a>
+            <a href="../paginas/aviso.html" class="footer-link"
+              >Términos legales</a
+            >
           </div>
         </div>
 
@@ -52,7 +51,7 @@
           <p class="social-title">Síguenos en nuestras redes sociales</p>
           <div class="footer-social">
             <a
-              href="https://instagram.com/yogamarte"
+              href="https://www.instagram.com/yogamarte.e/"
               target="_blank"
               rel="noopener"
               class="social-item"
@@ -63,7 +62,7 @@
             </a>
 
             <a
-              href="https://wa.me/573001234567"
+              href="https://wa.me/573115750453"
               target="_blank"
               rel="noopener"
               class="social-item"
@@ -73,17 +72,22 @@
               <span>WhatsApp</span>
             </a>
 
-            <a
-              href="mailto:yogamarte999@gmail.com"
-              class="social-item"
-              aria-label="Email"
-            >
-              <div class="social-icon"><i class="fas fa-envelope"></i></div>
+            <a href="#" class="social-item">
+              <div class="social-icon">
+                <i
+                  class="fas fa-envelope"
+                  onclick="copiarAlPortapapeles('yogamarte999@gmail.com', 'email')"
+                ></i>
+              </div>
               <span>Email</span>
             </a>
+            <!--<button class="copy-btn" title="Copiar email">
+              <i class="fas fa-copy"></i>-->
+            </button>
           </div>
         </div>
       </div>
     </footer>
+    
   </body>
 </html>

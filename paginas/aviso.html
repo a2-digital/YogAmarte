@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviso Legal | YogaAmarte</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Colores principales */
+        --color-primary-gold: #f4d188;
+        --color-secondary-gold: #bf8d50;
+        --color-white: #ffffff;
+        --color-text-light: #f0f0f0;
+        --color-text-gray: #e0e0e0;
+        --color-text-subtle: #b8b8b8;
+
+        /* Colores de fondo */
+        --bg-dark: rgba(0, 0, 0, 0.3);
+        --bg-darker: rgba(0, 0, 0, 0.5);
+        --bg-darkest: rgba(0, 0, 0, 0.7);
+        --bg-modal: #1f4c52;
+        --bg-overlay: rgba(0, 0, 0, 0.85);
+        --bg-card: ;
+        --bg-light-cream: #f5f5e8;
+        --bg-dark-teal: #1a3a3a;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--bg-dark-teal) 0%,
+          #0d2626 100%
+        );
+        min-height: 100vh;
+        padding: 40px 20px;
+        color: var(--color-text-light);
+        line-height: 1.8;
+      }
+
+      .page-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .page-header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: var(--color-primary-gold);
+        position: relative;
+        display: inline-block;
+      }
+
+      .page-header h1::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--color-primary-gold),
+          var(--color-secondary-gold)
+        );
+        border-radius: 2px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto 30px;
+        background: var(--bg-card);
+        padding: 35px 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(244, 209, 136, 0.15);
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+      }
+
+      .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          var(--color-primary-gold),
+          var(--color-secondary-gold)
+        );
+      }
+
+      .container h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: var(--color-primary-gold);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .container h2 .icon {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary-gold),
+          var(--color-secondary-gold)
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+
+      .container p {
+        font-size: 1rem;
+        color: var(--color-text-gray);
+        margin-bottom: 18px;
+        font-weight: 300;
+        text-align: justify;
+      }
+
+      .container p:last-child {
+        margin-bottom: 0;
+      }
+
+      .highlight-box {
+        background: rgba(244, 209, 136, 0.1);
+        padding: 20px 25px;
+        border-radius: 12px;
+        margin: 20px 0;
+        border-left: 3px solid var(--color-primary-gold);
+      }
+
+      .highlight-box p {
+        margin: 0;
+        font-style: italic;
+        color: var(--color-primary-gold);
+      }
+
+      .lang-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        gap: 20px;
+      }
+
+      .lang-divider span {
+        font-family: "Playfair Display", serif;
+        color: var(--color-secondary-gold);
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+      }
+
+      .lang-divider::before,
+      .lang-divider::after {
+        content: "";
+        height: 1px;
+        width: 100px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--color-secondary-gold),
+          transparent
+        );
+      }
+
+      .back-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .back-link a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 28px;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary-gold),
+          var(--color-secondary-gold)
+        );
+        color: var(--bg-dark-teal);
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(244, 209, 136, 0.3);
+      }
+
+      .back-link a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(244, 209, 136, 0.4);
+        background: linear-gradient(
+          135deg,
+          var(--color-secondary-gold),
+          var(--color-primary-gold)
+        );
+      }
+
+      /* Decoración lotus sutil */
+      /* Decoración minimalista eliminada para mantener limpieza */
+
+      @media (max-width: 600px) {
+        body {
+          padding: 20px 15px;
+        }
+
+        .page-header h1 {
+          font-size: 1.8rem;
+        }
+
+        .container {
+          padding: 25px 20px;
+        }
+
+        .container h2 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <h1>Legal Notice</h1>
+    </header>
+
+    <main>
+      <!-- Español -->
+      <div class="lang-divider">
+        <span>ESPAÑOL</span>
+      </div>
+      <section class="container">
+        <h2>
+          <span class="icon">🇪🇸</span>
+          Aviso Legal
+        </h2>
+
+        <p>
+          Las sesiones y servicios ofrecidos en esta página son de carácter
+          energético y holístico. No constituyen tratamientos médicos,
+          psicológicos ni sustituyen ningún tipo de atención profesional.
+        </p>
+
+        <div class="highlight-box">
+          <p>
+            La participación es voluntaria y bajo la responsabilidad del
+            usuario.
+          </p>
+        </div>
+
+        <p>
+          En caso de presentar síntomas físicos o emocionales, se recomienda
+          consultar con un profesional de la salud certificado.
+        </p>
+
+        <p>
+          Al utilizar este sitio web, el usuario reconoce haber leído y aceptado
+          este aviso legal.
+        </p>
+      </section>
+
+      <div class="lang-divider">
+        <span>DEUTSCH</span>
+      </div>
+
+      <!-- Alemán -->
+      <section class="container">
+        <h2>
+          <span class="icon">🇩🇪</span>
+          Rechtlicher Hinweis
+        </h2>
+
+        <p>
+          Bei den angebotenen energetischen Behandlungen handelt es sich weder
+          um medizinische, noch um psychologische Behandlungen.
+        </p>
+
+        <div class="highlight-box">
+          <p>
+            Die Teilnahme geschieht auf eigene Verantwortung und ersetzt keine
+            ärztliche, medizinische oder psychotherapeutische Betreuung.
+          </p>
+        </div>
+
+        <p>
+          Durch die Nutzung dieser Website erkennt der Benutzer an, diesen
+          rechtlichen Hinweis gelesen und akzeptiert zu haben.
+        </p>
+      </section>
+
+      <div class="back-link">
+        <a href="../index.html"> ← Volver al inicio </a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -85,10 +85,23 @@
       case "reserva":
         aplicarReserva(traducciones.Reserva);
         break;
+      case "aviso":
+        aplicarAviso(traducciones.Aviso);
+        break;
     }
 
     // Actualizar el atributo lang del HTML
     document.documentElement.lang = idioma;
+
+    // ✅ NUEVO: Disparar evento para que otras partes escuchen
+    window.dispatchEvent(
+      new CustomEvent("idiomaActualizado", {
+        detail: {
+          idioma: idioma,
+          traducciones: traducciones,
+        },
+      })
+    );
   }
 
   // ==================== TRADUCCIONES DEL NAVBAR ====================
@@ -108,6 +121,11 @@
     const btnReservar = document.querySelector(".btn-reservar");
     if (btnReservar) {
       btnReservar.textContent = nav.reservar;
+    }
+
+    const langLabel = document.getElementById("langLabel");
+    if (langLabel) {
+      langLabel.textContent = nav.langlabel;
     }
   }
 
@@ -142,13 +160,11 @@
       console.log("✅ Hecho por traducido");
     }
 
-    // Links legales
-    const footerLinks = document.querySelectorAll(".footer-link");
-    if (footerLinks.length >= 3) {
-      footerLinks[0].textContent = footer.links_legales.terminos;
-      footerLinks[1].textContent = footer.links_legales.privacidad;
-      footerLinks[2].textContent = footer.links_legales.cookies;
-      console.log("✅ Links legales traducidos");
+    // Link legal (Aviso Legal / Rechtlicher Hinweis)
+    const avisoLegalLink = document.querySelector(".footer-link");
+    if (avisoLegalLink && footer.links_legales.terminos) {
+      avisoLegalLink.textContent = footer.links_legales.terminos;
+      console.log("✅ Aviso legal traducido");
     }
 
     // Título redes sociales
@@ -309,22 +325,24 @@
       if (timelineItems[idx]) {
         const h3 = timelineItems[idx].querySelector("h3");
         const parrafos = timelineItems[idx].querySelectorAll(
-          "p:not(.highlight-text)"
-        ); // ✅ EXCLUYE highlight-text
-
+          "p:not([class^='highlight-'])"
+        );
+        const mensaje_final =
+          timelineItems[idx].querySelector(".highlight-text");
         if (h3) h3.textContent = item.titulo;
 
-        // Combinar todos los párrafos en uno solo (excepto highlight-text)
         const textoCompleto = item.parrafos.join(" ");
         if (parrafos[0]) {
           parrafos[0].textContent = textoCompleto;
 
-          // ✅ ARREGLADO: Solo oculta párrafos normales, NO los highlight-text
           for (let i = 1; i < parrafos.length; i++) {
             if (!parrafos[i].classList.contains("highlight-text")) {
               parrafos[i].style.display = "none";
             }
           }
+        }
+        if (mensaje_final) {
+          mensaje_final.textContent = item.mensaje_final || "";
         }
       }
     });
@@ -530,6 +548,49 @@
     ) {
       confirmText.textContent = reserva.pasos[1].mensaje_confirmacion.texto;
     }
+    // ✅ Mensaje especial (para clases grupales y retiros)
+    const mensajeEspecial = document.querySelector(".mensaje-especial");
+    if (mensajeEspecial && reserva.mensaje_especial) {
+      const tituloMensaje = mensajeEspecial.querySelector("h3");
+      const textosMensaje = mensajeEspecial.querySelectorAll(".mensaje-texto");
+      const contactoMensaje =
+        mensajeEspecial.querySelector(".mensaje-contacto");
+      const botonMensaje = mensajeEspecial.querySelector(".btn-whatsapp");
+
+      if (tituloMensaje) {
+        tituloMensaje.textContent = reserva.mensaje_especial.titulo;
+      }
+
+      // Texto 1 y Texto 2 (con HTML)
+      if (textosMensaje[0]) {
+        textosMensaje[0].innerHTML = reserva.mensaje_especial.texto1;
+      }
+      if (textosMensaje[1]) {
+        textosMensaje[1].innerHTML = reserva.mensaje_especial.texto2;
+      }
+
+      if (contactoMensaje) {
+        contactoMensaje.textContent = reserva.mensaje_especial.contacto;
+      }
+
+      // Solo el texto del botón (mantener el SVG)
+      if (botonMensaje) {
+        const svg = botonMensaje.querySelector("svg");
+        botonMensaje.textContent = "";
+        if (svg) botonMensaje.appendChild(svg);
+        botonMensaje.appendChild(
+          document.createTextNode(" " + reserva.mensaje_especial.boton)
+        );
+      }
+    }
+  }
+
+  // ==================== TRADUCCIONES DE AVISO LEGAL ====================
+  function aplicarAviso(aviso) {
+    if (!aviso) return;
+
+    // Aquí puedes agregar la lógica para la página de aviso legal si la tienes
+    console.log("Aplicando traducciones de Aviso Legal");
   }
 
   // ==================== CAMBIAR IDIOMA ====================
@@ -574,7 +635,7 @@
   // Esperar a que navbar Y footer estén cargados
   function esperarComponentes() {
     return new Promise((resolve) => {
-      const maxIntentos = 50; // 5 segundos
+      const maxIntentos = 50;
       let intentos = 0;
 
       const verificar = setInterval(() => {
@@ -587,14 +648,12 @@
           `Intento ${intentos}: Navbar=${!!navbar}, Footer=${!!footer}`
         );
 
-        // Si ambos existen, continuar
         if (navbar && footer) {
           clearInterval(verificar);
           console.log("✅ Navbar y Footer detectados");
           resolve();
         }
 
-        // Timeout de seguridad
         if (intentos >= maxIntentos) {
           clearInterval(verificar);
           console.warn("⚠️ Timeout esperando componentes");

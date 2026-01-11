@@ -1,0 +1,181 @@
+/* ==================== BOTONES DE COPIAR ==================== */
+@import url("variables.css");
+
+.copy-btn {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-gold),
+    var(--color-secondary-gold)
+  );
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--bg-dark-teal);
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(244, 209, 136, 0.3);
+  position: relative;
+  margin-left: 8px;
+}
+
+.copy-btn:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 4px 15px rgba(244, 209, 136, 0.5);
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary-gold),
+    var(--color-primary-gold)
+  );
+}
+
+.copy-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.copy-btn i {
+  pointer-events: none;
+}
+
+/* Animación al copiar */
+@keyframes copyPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.copy-btn:active i {
+  animation: copyPulse 0.3s ease;
+}
+
+/* Versión inline (para usar dentro de texto) */
+.copy-btn-inline {
+  width: 32px;
+  height: 32px;
+  font-size: 13px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* ==================== NOTIFICACIÓN DE COPIADO ==================== */
+
+.copy-notification {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  z-index: 10000;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.copy-notification.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.copy-notification-content {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+  font-weight: 600;
+  font-size: 15px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.copy-notification-content i {
+  font-size: 18px;
+  animation: checkmark 0.5s ease;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* ==================== AJUSTES PARA FOOTER ==================== */
+
+/* Si el botón está junto al social-item */
+.social-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Si está dentro de info-item */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+  .copy-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .copy-btn-inline {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .copy-notification-content {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .copy-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .copy-btn-inline {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .copy-notification {
+    top: 80px;
+  }
+
+  .copy-notification-content {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
