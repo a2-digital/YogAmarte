@@ -7,7 +7,7 @@
   const CONFIG = {
     publicKey: "xp1Mrn1VvHxnSUV99",
     serviceId: "service_yogamarte",
-    templateId: "template_swzxni59",
+    templateId: "template_swzxni5",
   };
 
   // ==================== INICIALIZACIÓN ====================
@@ -58,7 +58,7 @@
       const result = await emailjs.sendForm(
         CONFIG.serviceId,
         CONFIG.templateId,
-        form
+        form,
       );
 
       console.log("✅ Mensaje enviado:", result);
@@ -78,7 +78,7 @@
     // Mostrar notificación de éxito
     mostrarNotificacion(
       "¡Mensaje enviado exitosamente! Te responderemos pronto.",
-      "success"
+      "success",
     );
 
     // Resetear formulario
