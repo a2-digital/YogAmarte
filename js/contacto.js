@@ -7,7 +7,7 @@
   const CONFIG = {
     publicKey: "xp1Mrn1VvHxnSUV99",
     serviceId: "service_yogamarte",
-    templateId: "template_swzxni59",
+    templateId: "template_swzxni5",
   };
 
   // ==================== INICIALIZACIÓN ====================
