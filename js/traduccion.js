@@ -393,31 +393,17 @@
   }
 
   // ==================== TRADUCCIONES DE TESTIMONIO ====================
+  // El contenido de cada testimonio ahora se filtra por idioma
+  // (ver js/testimonios-data.js y js/testimonios-grid.js), así que aquí
+  // solo se traduce el encabezado de la sección.
   function aplicarTestimonio(testimonio) {
     if (!testimonio) return;
 
-    // Header
     const headerTitulo = document.querySelector(".testimonios-header h1");
     const headerSubtitulo = document.querySelector(".testimonios-header p");
     if (headerTitulo) headerTitulo.textContent = testimonio.header.titulo;
     if (headerSubtitulo)
       headerSubtitulo.textContent = testimonio.header.subtitulo;
-
-    // Cards de testimonios
-    const testimonioCards = document.querySelectorAll(".card-content");
-    testimonio.cards.forEach((card, idx) => {
-      if (testimonioCards[idx]) {
-        const nombre = testimonioCards[idx].querySelector(".card-name");
-        const ubicacion = testimonioCards[idx].querySelector(
-          ".testimonio-ubicacion",
-        );
-        const texto = testimonioCards[idx].querySelector(".card-text");
-
-        if (nombre) nombre.textContent = card.nombre;
-        if (ubicacion) ubicacion.textContent = card.ubicacion;
-        if (texto) texto.textContent = card.texto;
-      }
-    });
   }
 
   // ==================== TRADUCCIONES DE CONTACTO ====================

@@ -47,7 +47,7 @@ window.TESTIMONIOS_DATA = [
     id: "brigitte",
     idioma: "de",
     nombre: "Brigitte",
-    imagen: "../images/testimonios/de/Brigitte.png",
+    imagen: "../images/testimonios/de/brigitte.png",
   },
   {
     id: "ursula",
@@ -72,6 +72,6 @@ window.TESTIMONIOS_DATA = [
     id: "hanna",
     idioma: "es",
     nombre: "Hanna",
-    imagen: "../images/testimonios/es/Hanna.png",
+    imagen: "../images/testimonios/es/hanna.png",
   },
 ];
