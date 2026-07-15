@@ -76,7 +76,7 @@
 
   function initAnimaciones() {
     const elementos = document.querySelectorAll(
-      ".timeline-item, .cert-card, .value-card"
+      ".timeline-item, .cert-card, .value-card",
     );
     if (!elementos.length) return;
 
@@ -89,7 +89,7 @@
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
     );
 
     elementos.forEach((el) => {

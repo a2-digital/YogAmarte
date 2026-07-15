@@ -100,7 +100,7 @@
           idioma: idioma,
           traducciones: traducciones,
         },
-      })
+      }),
     );
   }
 
@@ -212,9 +212,8 @@
     const filosofiaBloques = document.querySelectorAll(".filosofia-bloque p");
     index.filosofia.bloques.forEach((bloque, idx) => {
       if (filosofiaBloques[idx]) {
-        filosofiaBloques[
-          idx
-        ].innerHTML = `${bloque.icono} <b>${bloque.titulo}</b> ${bloque.texto}`;
+        filosofiaBloques[idx].innerHTML =
+          `${bloque.icono} <b>${bloque.titulo}</b> ${bloque.texto}`;
       }
     });
 
@@ -316,7 +315,7 @@
 
     // Timeline
     const timelineTitulo = document.querySelector(
-      ".timeline-section .section-title"
+      ".timeline-section .section-title",
     );
     if (timelineTitulo) timelineTitulo.textContent = sobremi.timeline.titulo;
 
@@ -325,7 +324,7 @@
       if (timelineItems[idx]) {
         const h3 = timelineItems[idx].querySelector("h3");
         const parrafos = timelineItems[idx].querySelectorAll(
-          "p:not([class^='highlight-'])"
+          "p:not([class^='highlight-'])",
         );
         const mensaje_final =
           timelineItems[idx].querySelector(".highlight-text");
@@ -349,7 +348,7 @@
 
     // Formación
     const formacionTitulo = document.querySelector(
-      ".certifications-section .section-title"
+      ".certifications-section .section-title",
     );
     if (formacionTitulo) formacionTitulo.textContent = sobremi.formacion.titulo;
 
@@ -378,7 +377,7 @@
 
     // Valores
     const valoresTitulo = document.querySelector(
-      ".values-section .section-title"
+      ".values-section .section-title",
     );
     if (valoresTitulo) valoresTitulo.textContent = sobremi.valores.titulo;
 
@@ -410,7 +409,7 @@
       if (testimonioCards[idx]) {
         const nombre = testimonioCards[idx].querySelector(".card-name");
         const ubicacion = testimonioCards[idx].querySelector(
-          ".testimonio-ubicacion"
+          ".testimonio-ubicacion",
         );
         const texto = testimonioCards[idx].querySelector(".card-text");
 
@@ -427,7 +426,7 @@
 
     // Título principal
     const titulo = document.querySelector(
-      ".contacto-container h1, .contacto-section h2"
+      ".contacto-container h1, .contacto-section h2",
     );
     if (titulo) titulo.textContent = contacto.titulo;
 
@@ -451,7 +450,7 @@
         btnEnviar.innerHTML = "";
         btnEnviar.appendChild(icono);
         btnEnviar.appendChild(
-          document.createTextNode(" " + contacto.formulario.boton)
+          document.createTextNode(" " + contacto.formulario.boton),
         );
       } else {
         btnEnviar.textContent = contacto.formulario.boton;
@@ -466,7 +465,7 @@
         formInfo.innerHTML = "";
         formInfo.appendChild(icono);
         formInfo.appendChild(
-          document.createTextNode(" " + contacto.formulario.info)
+          document.createTextNode(" " + contacto.formulario.info),
         );
       } else {
         formInfo.textContent = contacto.formulario.info;
@@ -519,7 +518,7 @@
 
     // Descripción del calendario
     const descripcion = document.querySelector(
-      ".calendar-section .descripcion"
+      ".calendar-section .descripcion",
     );
     if (descripcion && reserva.pasos[1]) {
       descripcion.textContent = reserva.pasos[1].descripcion;
@@ -579,7 +578,7 @@
         botonMensaje.textContent = "";
         if (svg) botonMensaje.appendChild(svg);
         botonMensaje.appendChild(
-          document.createTextNode(" " + reserva.mensaje_especial.boton)
+          document.createTextNode(" " + reserva.mensaje_especial.boton),
         );
       }
     }
@@ -645,7 +644,7 @@
         const footer = document.querySelector(".footer");
 
         console.log(
-          `Intento ${intentos}: Navbar=${!!navbar}, Footer=${!!footer}`
+          `Intento ${intentos}: Navbar=${!!navbar}, Footer=${!!footer}`,
         );
 
         if (navbar && footer) {
